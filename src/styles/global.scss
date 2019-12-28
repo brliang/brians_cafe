@@ -11,8 +11,37 @@ html {
   height: 100vh;
 }
 
+#rockset {
+  color: #9737ab;
+}
+
+#rockset:hover {
+  background-color: #49c0e7;
+}
+
+#linkedin {
+  color: #0077B5;
+}
+
+#linkedin:hover {
+  color: white;
+  background-color: #0077B5;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
 #back_arrow:hover g {
-  fill: #4bfd9e;
+  fill: #3fd886;
+}
+
+#bread:hover g {
+  fill: #a7612f;
 }
 
 #coffee_chat:hover g {
@@ -23,16 +52,17 @@ html {
   fill: #d3d3d3;
 }
 
+#back_arrow,
+#bread,
 #chat,
-#coffee {
+#coffee,
+#quill {
   max-height: $sm-svg;
   max-width: $sm-svg;
 }
 
-#back_arrow,
 #first_name,
-#last_name,
-#quill {
+#last_name {
   max-height: $med-svg;
   max-width: $med-svg;
 }
@@ -47,10 +77,8 @@ main {
 }
 
 @media screen and (max-width: 1000px) {
-  #back_arrow,
   #first_name,
-  #last_name,
-  #quill {
+  #last_name {
     max-height: $sm-svg;
     max-width: $sm-svg;
   }

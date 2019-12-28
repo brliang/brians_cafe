@@ -1,5 +1,6 @@
 const pages = {
-  INDEX: "summer",
+  FOOD: "food",
+  INDEX: "index",
   THOUGHTS: "thoughts",
 }
 

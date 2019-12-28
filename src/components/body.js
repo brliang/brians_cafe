@@ -6,9 +6,9 @@ import pages from "../constants/global"
 import StyledBody from "../styled_components/body"
 import H1 from "../styled_components/h1"
 import Paragraph from "../styled_components/paragraph"
-import BrianSVG from "../svg/brian.svg"
-import FirstNameSVG from "../svg/firstName.svg"
-import LastNameSVG from "../svg/lastName.svg"
+import Brian from "../svg/brian.svg"
+import FirstName from "../svg/firstName.svg"
+import LastName from "../svg/lastName.svg"
 
 const Body = ({ pageTitle }) => {
   switch (pageTitle) {
@@ -16,23 +16,42 @@ const Body = ({ pageTitle }) => {
       return (
         <StyledBody>
           <H1>Hi and welcome!</H1>
-          <BrianSVG id="brian" />
+          <Brian id="brian" />
           <Paragraph>
             I'm an incoming pebble, and aspiring rock-star at{" "}
-            <a href="https://www.rockset.com" target="_blank">
+            <a
+              id="rockset"
+              href="https://www.rockset.com"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               Rockset
             </a>
             . Born and raised in amazing New Jersey. Survived many winters at{" "}
-            Northwestern University . Previous stunts at Expedia, LinkedIn, and
-            Facebook. Big fan of coffee, cafes, food, bakeries, cooking, running, cities,
-            nature... Hmmm. Let me know if there's anything else I should write
-            here. I implore you to reach out! I promise it won't be a mistake.
-            Most all messages are welcome :)
+            Northwestern University . Previous stunts at Expedia,{" "}
+            <a
+              id="linkedin"
+              href="https://www.linkedin.com/in/brian-liang/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              LinkedIn
+            </a>
+            , and Facebook. Big fan of coffee, cafes, food, bakeries, cooking,
+            running, cities, nature... Hmmm. Let me know if there's anything
+            else I should write here. I implore you to reach out! I promise it
+            won't be a mistake. Most all messages are welcome :)
           </Paragraph>
           <div>
-            <FirstNameSVG id="first_name" />
-            <LastNameSVG id="last_name" />
+            <FirstName id="first_name" />
+            <LastName id="last_name" />
           </div>
+        </StyledBody>
+      )
+    case pages.FOOD:
+      return (
+        <StyledBody>
+          <H1>Food for Thought... Coming soon!</H1>
         </StyledBody>
       )
     case pages.THOUGHTS:
