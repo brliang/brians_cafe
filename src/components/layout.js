@@ -1,6 +1,7 @@
 import React from "react"
 
-import { trackCustomEvent } from 'gatsby-plugin-google-analytics'
+import { Helmet } from "react-helmet"
+import { trackCustomEvent } from "gatsby-plugin-google-analytics"
 import PropTypes from "prop-types"
 
 import Body from "./body"
@@ -12,6 +13,10 @@ import CoffeeSVG from "../svg/coffee.svg"
 const Layout = ({ pageTitle }) => {
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Brian's Cafe</title>
+      </Helmet>
       <Header />
       <Body pageTitle={pageTitle} />
       <Footer>
