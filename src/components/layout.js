@@ -15,7 +15,7 @@ const Layout = ({ pageTitle }) => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Brian's Cafe</title>
+        <title>Brian Liang</title>
       </Helmet>
       <Header />
       <Body pageTitle={pageTitle} />
