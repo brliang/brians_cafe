@@ -15,7 +15,7 @@ const Body = ({ pageTitle }) => {
     case pages.INDEX:
       return (
         <StyledBody>
-          <h1>Hi! Welcome to my page</h1>
+          <h1>Hi and welcome!</h1>
           <BrianSVG id="brian" />
           <Paragraph>
             I'm an incoming pebble, and aspiring rock-star at{" "}

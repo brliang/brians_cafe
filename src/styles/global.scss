@@ -46,22 +46,21 @@ main {
   width: 60%;
 }
 
-/* On screens that are 992px or less, set the background color to blue */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1000px) {
   #back_arrow,
   #first_name,
   #last_name,
   #quill {
-    max-height: $med-svg*.75;
-    max-width: $med-svg*.75;
+    max-height: $sm-svg;
+    max-width: $sm-svg;
   }
 
   #brian {
-    max-height: $lg-svg*.75;
-    max-width: $lg-svg*.75;
+    max-height: $med-svg;
+    max-width: $med-svg;
   }
 
   main {
-    width: 75%;
+    width: 85%;
   }
 }
