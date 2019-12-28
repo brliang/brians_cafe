@@ -1,7 +1,7 @@
 import React from "react"
 
-import { Helmet } from "react-helmet"
 import { trackCustomEvent } from "gatsby-plugin-google-analytics"
+import { Helmet } from "react-helmet"
 import PropTypes from "prop-types"
 
 import Body from "./body"
@@ -20,20 +20,24 @@ const Layout = ({ pageTitle }) => {
       <Header />
       <Body pageTitle={pageTitle} />
       <Footer>
-        <a
-          id="coffee_chat"
-          href="mailto:bliang529@gmail.com?subject=Coffee%20Chat&body=Hi!"
+        <button
           onClick={e => {
-            e.preventDefault()
+            //e.preventDefault()
             trackCustomEvent({
               category: "Email Link",
               action: "Click",
             })
           }}
+          style={{ backgroundColor: `white`, border: `none` }}
         >
-          <CoffeeSVG id="coffee" />
-          <ChatSVG id="chat" />
-        </a>
+          <a
+            id="coffee_chat"
+            href="mailto:bliang529@gmail.com?subject=Coffee%20Chat&body=Hi!"
+          >
+            <CoffeeSVG id="coffee" />
+            <ChatSVG id="chat" />
+          </a>
+        </button>
       </Footer>
     </>
   )

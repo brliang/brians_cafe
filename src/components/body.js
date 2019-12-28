@@ -24,9 +24,9 @@ const Body = ({ pageTitle }) => {
             </a>
             . Born and raised in amazing New Jersey. Survived many winters at{" "}
             Northwestern University . Previous stunts at Expedia, LinkedIn, and
-            Facebook. Big fan of food, bakeries, cooking, running, cities,
+            Facebook. Big fan of coffee, cafes, food, bakeries, cooking, running, cities,
             nature... Hmmm. Let me know if there's anything else I should write
-            here. I emplore you to reach out! I promise it won't be a mistake.
+            here. I implore you to reach out! I promise it won't be a mistake.
             Most all messages are welcome :)
           </Paragraph>
           <div>
