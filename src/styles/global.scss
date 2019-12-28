@@ -1,0 +1,59 @@
+$font-stack: Helvetica, sans-serif;
+$primary-font: black;
+
+$sm-svg: 60px;
+$med-svg: 120px;
+$lg-svg: 200px;
+
+html {
+  color: $primary-font;
+  font: 100% $font-stack;
+  height: 100vh;
+}
+
+#back_arrow:hover g {
+  fill: #4bfd9e;
+}
+
+#coffee_chat:hover g {
+  fill: #6f4e37;
+}
+
+#quill:hover g {
+  fill: #d3d3d3;
+}
+
+#chat,
+#coffee {
+  max-height: $sm-svg;
+  max-width: $sm-svg;
+}
+
+#back_arrow,
+#first_name,
+#last_name,
+#quill {
+  max-height: $med-svg;
+  max-width: $med-svg;
+}
+
+#brian {
+  max-height: $lg-svg;
+  max-width: $lg-svg;
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+  #back_arrow,
+  #first_name,
+  #last_name,
+  #quill {
+    max-height: $med-svg*.75;
+    max-width: $med-svg*.75;
+  }
+
+  #brian {
+    max-height: $lg-svg*.75;
+    max-width: $lg-svg*.75;
+  }
+}
