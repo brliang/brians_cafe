@@ -19,6 +19,10 @@ const Body = ({ pageData, pageTitle }) => {
           <H1>Hi and welcome!</H1>
           <StyledBody>
             <Brian id="brian" />
+            <span>
+              <FirstName id="first_name" />
+              <LastName id="last_name" />
+            </span>
             <Paragraph>
               An incoming pebble, and aspiring rock-star at{" "}
               <a
@@ -39,15 +43,12 @@ const Body = ({ pageData, pageTitle }) => {
               >
                 LinkedIn
               </a>
-              , and Facebook. Big fan of coffee + cafes + bakeries, food + cooking,
-              running, cities + nature... Hmmm. Let me know if there's anything
-              else I should write here. I implore you to reach out! I promise it
-              won't be a mistake. Most all messages are welcome :)
+              , and Facebook. Big fan of coffee + cafes + bakeries, food +
+              cooking, running, cities + nature... Hmmm. Let me know if there's
+              anything else I should write here.
+              <br /> <br />
+              Anyways, please reach out! I promise it won't be a mistake.
             </Paragraph>
-            <div>
-              <FirstName id="first_name" />
-              <LastName id="last_name" />
-            </div>
           </StyledBody>
         </>
       )
@@ -59,7 +60,7 @@ const Body = ({ pageData, pageTitle }) => {
 }
 
 Body.propTypes = {
-  pageTitle: PropTypes.object.isRequired,
+  pageData: PropTypes.object.isRequired,
   pageTitle: PropTypes.string.isRequired,
 }
 

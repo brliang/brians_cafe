@@ -1,6 +1,11 @@
 $font-stack: Helvetica, sans-serif;
 $primary-font: black;
+$rockset-primary-color: #9737ab;
+$rockset-secondary-color: #49c0e7;
+$linkedin-primary-color: #0077B5;
+$linkedin-secondary-color: white;
 
+$xs-svg: 40px;
 $sm-svg: 60px;
 $med-svg: 120px;
 $lg-svg: 200px;
@@ -12,20 +17,20 @@ html {
 }
 
 #rockset {
-  color: #9737ab;
+  color: $rockset-primary-color;
 }
 
 #rockset:hover {
-  background-color: #49c0e7;
+  background-color: $rockset-secondary-color;
 }
 
 #linkedin {
-  color: #0077B5;
+  color: $linkedin-primary-color;
 }
 
 #linkedin:hover {
-  color: white;
-  background-color: #0077B5;
+  color: $linkedin-secondary-color;
+  background-color: $linkedin-primary-color;
 }
 
 a,
@@ -34,6 +39,20 @@ a:focus,
 a:active {
   text-decoration: none;
   color: inherit;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+button:hover {
+  background-color: #b1b1b1;
+}
+
+button:active {
+  background-color: $rockset-primary-color;
 }
 
 #back_arrow:hover g {
@@ -52,10 +71,14 @@ a:active {
   fill: #d3d3d3;
 }
 
+#chat,
+#coffee {
+  max-height: $xs-svg;
+  max-width: $xs-svg;
+}
+
 #back_arrow,
 #bread,
-#chat,
-#coffee,
 #quill {
   max-height: $sm-svg;
   max-width: $sm-svg;

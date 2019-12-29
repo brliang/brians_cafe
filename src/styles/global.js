@@ -1,12 +1,14 @@
 const global = {
   colors: {
     background: "white",
+    border_color: "lightgray",
     primary_font: "black",
   },
   fonts: {
     helvetica: "helvetica",
   },
   font_sizes: {
+    xs: "14px",
     s: "18px",
     m: "24px",
     l: "30px",
