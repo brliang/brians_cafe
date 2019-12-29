@@ -5,7 +5,6 @@ import Input from "../styled_components/input"
 import Li from "../styled_components/li"
 import Textarea from "../styled_components/textarea"
 import Ul from "../styled_components/ul"
-import Button from "../styled_components/button"
 
 const Contact = () => {
   return (
