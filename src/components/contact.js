@@ -15,6 +15,7 @@ const Contact = () => {
       netlify-honeypot="bot-field"
       data-netlify="true"
     >
+      <input type="hidden" name="form-name" value="contact" />
       <Ul>
         <Li>
           <Input type="text" name="name" placeholder="name" />
