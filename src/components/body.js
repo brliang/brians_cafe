@@ -20,7 +20,7 @@ const Body = ({ pageData, pageTitle }) => {
           <StyledBody>
             <Brian id="brian" />
             <Paragraph>
-              I'm an incoming pebble, and aspiring rock-star at{" "}
+              An incoming pebble, and aspiring rock-star at{" "}
               <a
                 id="rockset"
                 href="https://www.rockset.com"
@@ -29,8 +29,8 @@ const Body = ({ pageData, pageTitle }) => {
               >
                 Rockset
               </a>
-              . Born and raised in amazing New Jersey. Survived many winters at{" "}
-              Northwestern University . Previous stunts at Expedia,{" "}
+              . Born and raised in (amazing) New Jersey. Survived three winters
+              at Northwestern University. Previous stints at Expedia,{" "}
               <a
                 id="linkedin"
                 href="https://www.linkedin.com/in/brian-liang/"
@@ -39,8 +39,8 @@ const Body = ({ pageData, pageTitle }) => {
               >
                 LinkedIn
               </a>
-              , and Facebook. Big fan of coffee, cafes, food, bakeries, cooking,
-              running, cities, nature... Hmmm. Let me know if there's anything
+              , and Facebook. Big fan of coffee + cafes + bakeries, food + cooking,
+              running, cities + nature... Hmmm. Let me know if there's anything
               else I should write here. I implore you to reach out! I promise it
               won't be a mistake. Most all messages are welcome :)
             </Paragraph>
