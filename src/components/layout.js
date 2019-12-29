@@ -9,7 +9,7 @@ import Footer from "../styled_components/footer"
 import Chat from "../svg/chat.svg"
 import Coffee from "../svg/coffee.svg"
 
-const Layout = ({ pageTitle }) => {
+const Layout = ({ pageData, pageTitle }) => {
   return (
     <>
       <Helmet>
@@ -17,7 +17,7 @@ const Layout = ({ pageTitle }) => {
         <title>Brian Liang</title>
       </Helmet>
       <Header pageTitle={pageTitle} />
-      <Body pageTitle={pageTitle} />
+      <Body pageData={pageData} pageTitle={pageTitle} />
       <Footer>
         <a
           id="coffee_chat"
@@ -32,6 +32,7 @@ const Layout = ({ pageTitle }) => {
 }
 
 Layout.propTypes = {
+  pageData: PropTypes.object.isRequired,
   pageTitle: PropTypes.string.isRequired,
 }
 

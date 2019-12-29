@@ -7,9 +7,9 @@ const global = {
     helvetica: "helvetica",
   },
   font_sizes: {
-    s: "16px",
-    m: "20px",
-    l: "24px",
+    s: "18px",
+    m: "24px",
+    l: "30px",
   },
   font_weights: {
     light: 100,

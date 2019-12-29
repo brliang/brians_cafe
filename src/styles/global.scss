@@ -73,7 +73,7 @@ a:active {
 }
 
 main {
-  width: 60%;
+  max-width: 40%;
 }
 
 @media screen and (max-width: 1000px) {
@@ -89,6 +89,6 @@ main {
   }
 
   main {
-    width: 85%;
+    max-width: 85%;
   }
 }
