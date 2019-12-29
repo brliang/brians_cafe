@@ -1,10 +1,11 @@
 import React from "react"
 
-import Submit from "../styled_components/submit"
+import Button from "../styled_components/button"
 import Input from "../styled_components/input"
 import Li from "../styled_components/li"
 import Textarea from "../styled_components/textarea"
 import Ul from "../styled_components/ul"
+import Button from "../styled_components/button"
 
 const Contact = () => {
   return (
@@ -27,7 +28,7 @@ const Contact = () => {
           <Textarea name="message" placeholder="message" />
         </Li>
         <Li>
-          <Submit type="submit">send</Submit>
+          <Button type="submit">send</Button>
         </Li>
       </Ul>
     </form>
