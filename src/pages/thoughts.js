@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import pages from "../constants/global"
+import "../styles/global.scss"
 
 const Thoughts = ({ data }) => <Layout pageData={data} pageTitle={pages.THOUGHTS} />
 
