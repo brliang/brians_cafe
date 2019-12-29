@@ -47,7 +47,7 @@ const Body = ({ pageData, pageTitle }) => {
               cooking, running, cities + nature... Hmmm. Let me know if there's
               anything else I should write here.
               <br /> <br />
-              Anyways, please reach out! I promise it won't be a mistake.
+              Anyways, please reach out! I promise I'll respond (to real emails) ASAP!
             </Paragraph>
           </StyledBody>
         </>
