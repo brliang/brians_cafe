@@ -12,7 +12,7 @@ const Container = ({ pageData, pageTitle }) => {
       return (
         <>
           <H1>Food for thought</H1>
-          {pageData.allFoodCsv.edges.map((row) => (
+          {pageData.allFoodCsv.edges.map(row => (
             <Post
               title={row.node.title}
               date={row.node.date}
@@ -25,7 +25,7 @@ const Container = ({ pageData, pageTitle }) => {
       return (
         <>
           <H1>Thoughts</H1>
-          {pageData.allThoughtsCsv.edges.map((row) => (
+          {pageData.allThoughtsCsv.edges.map(row => (
             <Post
               title={row.node.title}
               date={row.node.date}
@@ -35,18 +35,7 @@ const Container = ({ pageData, pageTitle }) => {
         </>
       )
     default:
-      return (
-        <>
-          <H1>Thoughts</H1>
-          {pageData.allThoughtsCsv.edges.map((row) => (
-            <Post
-              title={row.node.title}
-              date={row.node.date}
-              content={row.node.content}
-            />
-          ))}
-        </>
-      )
+      return <div />
   }
 }
 

@@ -50,8 +50,11 @@ const Header = ({ pageTitle }) => {
           <Link to="/">
             <BackArrow id="back_arrow" />
           </Link>
+          <Link to="/food/">
+            <Bread id="bread" />
+          </Link>
           <Link to="/thoughts/">
-            <Quill id="quill" />{" "}
+            <Quill id="quill" />
           </Link>
         </StyledHeader>
       )
