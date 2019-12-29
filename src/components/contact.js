@@ -1,6 +1,6 @@
 import React from "react"
 
-import Button from "../styled_components/button"
+import Submit from "../styled_components/submit"
 import Input from "../styled_components/input"
 import Li from "../styled_components/li"
 import Textarea from "../styled_components/textarea"
@@ -9,6 +9,7 @@ import Ul from "../styled_components/ul"
 const Contact = () => {
   return (
     <form
+      action="/"
       name="contact"
       method="POST"
       netlify-honeypot="bot-field"
@@ -26,7 +27,7 @@ const Contact = () => {
           <Textarea name="message" placeholder="message" />
         </Li>
         <Li>
-          <Button type="submit">send</Button>
+          <Submit type="submit">send</Submit>
         </Li>
       </Ul>
     </form>
