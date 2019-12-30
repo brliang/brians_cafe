@@ -18,14 +18,19 @@ const Contact = () => {
       <input type="hidden" name="form-name" value="contact" />
       <Ul>
         <Li>
-          <Input type="text" name="name" placeholder="name" />
+          <Input type="text" name="name" placeholder="name" required="true" />
         </Li>
         <Li>
-          <Input type="email" name="email" placeholder="email" />
+          <Input
+            type="email"
+            name="email"
+            placeholder="email"
+            required="true"
+          />
         </Li>
         <Li>
           <input type="hidden" name="bot-field" />
-          <Textarea name="message" placeholder="message" />
+          <Textarea name="message" placeholder="message" required="true" />
         </Li>
         <Li>
           <Button type="submit">send</Button>
