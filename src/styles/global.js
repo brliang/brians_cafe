@@ -3,6 +3,7 @@ const global = {
     background: "white",
     border_color: "lightgray",
     primary_font: "black",
+    disabled: "gray",
   },
   fonts: {
     helvetica: "helvetica",
