@@ -4,14 +4,12 @@ import PropTypes from "prop-types"
 
 import Post from "./post"
 import pages from "../constants/global"
-import H1 from "../styled_components/h1"
 
 const Container = ({ pageData, pageTitle }) => {
   switch (pageTitle) {
     case pages.FOOD:
       return (
         <>
-          <H1>Food for thought</H1>
           {pageData.allFoodCsv.edges.map(row => (
             <Post
               title={row.node.title}
@@ -24,7 +22,6 @@ const Container = ({ pageData, pageTitle }) => {
     case pages.THOUGHTS:
       return (
         <>
-          <H1>Thoughts</H1>
           {pageData.allThoughtsCsv.edges.map(row => (
             <Post
               title={row.node.title}

@@ -8,10 +8,10 @@ const global = {
     helvetica: "helvetica",
   },
   font_sizes: {
-    xs: "14px",
-    s: "18px",
-    m: "24px",
-    l: "30px",
+    xs: "12px",
+    s: "16px",
+    m: "20px",
+    l: "24px",
   },
   font_weights: {
     light: 100,

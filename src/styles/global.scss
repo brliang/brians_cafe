@@ -2,13 +2,13 @@ $font-stack: Helvetica, sans-serif;
 $primary-font: black;
 $rockset-primary-color: #9737ab;
 $rockset-secondary-color: #49c0e7;
-$linkedin-primary-color: #0077B5;
+$linkedin-primary-color: #0077b5;
 $linkedin-secondary-color: white;
 
 $xs-svg: 40px;
 $sm-svg: 60px;
-$med-svg: 120px;
-$lg-svg: 200px;
+$med-svg: 100px;
+$lg-svg: 140px;
 
 html {
   color: $primary-font;
@@ -44,7 +44,7 @@ a:active {
 input:focus,
 textarea:focus,
 button:focus {
-    outline: none;
+  outline: none;
 }
 
 button:hover {
@@ -71,12 +71,6 @@ button:active {
   fill: #d3d3d3;
 }
 
-#chat,
-#coffee {
-  max-height: $xs-svg;
-  max-width: $xs-svg;
-}
-
 #back_arrow,
 #bread,
 #quill {
@@ -100,6 +94,13 @@ main {
 }
 
 @media screen and (max-width: 1000px) {
+  #back_arrow,
+  #bread,
+  #quill {
+    max-height: $xs-svg;
+    max-width: $xs-svg;
+  }
+
   #first_name,
   #last_name {
     max-height: $sm-svg;

@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 
 import pages from "../constants/global"
+import H1 from "../styled_components/h1"
 import StyledHeader from "../styled_components/header"
 import BackArrow from "../svg/back_arrow.svg"
 import Bread from "../svg/bread.svg"
@@ -14,12 +15,7 @@ const Header = ({ pageTitle }) => {
     case pages.INDEX:
       return (
         <StyledHeader>
-          <Link to="/food/">
-            <Bread id="bread" />
-          </Link>
-          <Link to="/thoughts/">
-            <Quill id="quill" />
-          </Link>
+          <H1>hi and welcome!</H1>
         </StyledHeader>
       )
     case pages.FOOD:
@@ -28,9 +24,8 @@ const Header = ({ pageTitle }) => {
           <Link to="/">
             <BackArrow id="back_arrow" />
           </Link>
-          <Link to="/thoughts/">
-            <Quill id="quill" />
-          </Link>
+          <H1>{pageTitle}</H1>
+          <Bread id="bread" />
         </StyledHeader>
       )
     case pages.THOUGHTS:
@@ -39,9 +34,8 @@ const Header = ({ pageTitle }) => {
           <Link to="/">
             <BackArrow id="back_arrow" />
           </Link>
-          <Link to="/food/">
-            <Bread id="bread" />
-          </Link>
+          <H1>{pageTitle}</H1>
+          <Quill id="quill" />
         </StyledHeader>
       )
     default:
@@ -50,12 +44,7 @@ const Header = ({ pageTitle }) => {
           <Link to="/">
             <BackArrow id="back_arrow" />
           </Link>
-          <Link to="/food/">
-            <Bread id="bread" />
-          </Link>
-          <Link to="/thoughts/">
-            <Quill id="quill" />
-          </Link>
+          <H1>{pageTitle}</H1>
         </StyledHeader>
       )
   }

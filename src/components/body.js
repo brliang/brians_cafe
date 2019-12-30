@@ -5,7 +5,6 @@ import PropTypes from "prop-types"
 import Container from "./container"
 import pages from "../constants/global"
 import StyledBody from "../styled_components/body"
-import H1 from "../styled_components/h1"
 import Paragraph from "../styled_components/paragraph"
 import Brian from "../svg/brian.svg"
 import FirstName from "../svg/firstName.svg"
@@ -16,7 +15,6 @@ const Body = ({ pageData, pageTitle }) => {
     case pages.INDEX:
       return (
         <>
-          <H1>Hi and welcome!</H1>
           <StyledBody>
             <Brian id="brian" />
             <span>

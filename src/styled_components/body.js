@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const Body = styled.main`
-  margin: 0 auto;
+  margin: 20px auto;
   text-align: center;
 `
 
