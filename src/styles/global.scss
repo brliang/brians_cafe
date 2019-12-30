@@ -4,6 +4,7 @@ $rockset-primary-color: #9737ab;
 $rockset-secondary-color: #49c0e7;
 $linkedin-primary-color: #0077b5;
 $linkedin-secondary-color: white;
+$disabled-color: gray;
 
 $xs-svg: 40px;
 $sm-svg: 60px;
@@ -55,20 +56,24 @@ button:active {
   background-color: $rockset-primary-color;
 }
 
+#bread g {
+  fill: $disabled-color;
+}
+
+#quill g {
+  fill: $disabled-color;
+}
+
 #back_arrow:hover g {
   fill: #3fd886;
 }
 
 #bread:hover g {
-  fill: #a7612f;
-}
-
-#coffee_chat:hover g {
-  fill: #6f4e37;
+  //fill: #a7612f;
 }
 
 #quill:hover g {
-  fill: #d3d3d3;
+  //fill: #d3d3d3;
 }
 
 #back_arrow,

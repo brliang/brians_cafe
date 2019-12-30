@@ -1,6 +1,5 @@
 import React from "react"
 
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 
 import Contact from "./contact"
@@ -19,16 +18,12 @@ const Footer = ({ pageTitle }) => {
           <StyledFooter>
             <Ul>
               <Li>
-                <Link to="/food/">
-                  <Bread id="bread" />
-                </Link>
-                <Link to="/food/"> {pages.FOOD}</Link>
+                <Bread id="bread" />
+                {pages.FOOD} - coming soon
               </Li>
               <Li>
-                <Link to="/thoughts/">
-                  <Quill id="quill" />
-                </Link>
-                <Link to="/thoughts/"> {pages.THOUGHTS}</Link>
+                <Quill id="quill" />
+                {pages.THOUGHTS} - coming soon
               </Li>
             </Ul>
           </StyledFooter>
