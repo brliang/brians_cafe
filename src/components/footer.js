@@ -15,6 +15,7 @@ const Footer = ({ pageTitle }) => {
     case pages.INDEX:
       return (
         <>
+          <Contact />
           <StyledFooter>
             <Ul>
               <Li>
@@ -27,7 +28,6 @@ const Footer = ({ pageTitle }) => {
               </Li>
             </Ul>
           </StyledFooter>
-          <Contact />
         </>
       )
     case pages.FOOD:

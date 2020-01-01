@@ -4,7 +4,7 @@ $rockset-primary-color: #9737ab;
 $rockset-secondary-color: #49c0e7;
 $linkedin-primary-color: #0077b5;
 $linkedin-secondary-color: white;
-$disabled-color: gray;
+$disabled-color: #d5d5d5;
 
 $xs-svg: 40px;
 $sm-svg: 60px;
@@ -15,6 +15,10 @@ html {
   color: $primary-font;
   font: 100% $font-stack;
   height: 100vh;
+}
+
+::placeholder {
+  color: $disabled-color;
 }
 
 #rockset {

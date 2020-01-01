@@ -3,7 +3,7 @@ const global = {
     background: "white",
     border_color: "lightgray",
     primary_font: "black",
-    disabled: "gray",
+    disabled: "#d5d5d5",
   },
   fonts: {
     helvetica: "helvetica",
