@@ -6,6 +6,10 @@ $linkedin-primary-color: #0077b5;
 $linkedin-secondary-color: white;
 $disabled-color: #d5d5d5;
 
+$light: 100;
+$medium: 400;
+$bold: 900;
+
 $xs-svg: 40px;
 $sm-svg: 60px;
 $med-svg: 100px;
@@ -19,6 +23,7 @@ html {
 
 ::placeholder {
   color: $primary-font;
+  font-weight: $light;
 }
 
 #rockset {
