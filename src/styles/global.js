@@ -3,16 +3,18 @@ const global = {
     background: "white",
     border_color: "lightgray",
     primary_font: "black",
-    disabled: "#d5d5d5",
+    secondary_font: "darkgray",
+    tertiary_font: "indigo",
+    disabled: "lightgray",
   },
   fonts: {
     helvetica: "helvetica",
   },
   font_sizes: {
-    xs: "12px",
+    xs: "14px",
     s: "16px",
-    m: "20px",
-    l: "24px",
+    m: "24px",
+    l: "30px",
   },
   font_weights: {
     light: 100,

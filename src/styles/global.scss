@@ -1,10 +1,16 @@
 $font-stack: Helvetica, sans-serif;
 $primary-font: black;
+$secondary-font: darkgray;
+$tertiary-font: indigo;
+$disabled-color: lightgray;
+$cta-hover-color: #bbbbbb;
 $rockset-primary-color: #9737ab;
 $rockset-secondary-color: #49c0e7;
 $linkedin-primary-color: #0077b5;
 $linkedin-secondary-color: white;
-$disabled-color: #d5d5d5;
+$arrow-color: #3fd886;
+$bread-color: #a7612f;
+$quill-color: #d3d3d3;
 
 $light: 100;
 $medium: 400;
@@ -22,7 +28,7 @@ html {
 }
 
 ::placeholder {
-  color: $primary-font;
+  color: $secondary-font;
   font-weight: $light;
 }
 
@@ -58,7 +64,7 @@ button:focus {
 }
 
 button:hover {
-  background-color: #b1b1b1;
+  background-color: $cta-hover-color;
 }
 
 button:active {
@@ -74,15 +80,15 @@ button:active {
 }
 
 #back_arrow:hover g {
-  fill: #3fd886;
+  fill: $arrow-color;
 }
 
 #bread:hover g {
-  //fill: #a7612f;
+  fill: $bread-color;
 }
 
 #quill:hover g {
-  //fill: #d3d3d3;
+  fill: $quill-color;
 }
 
 #back_arrow,
@@ -104,7 +110,7 @@ button:active {
 }
 
 main {
-  max-width: 40%;
+  max-width: 35%;
 }
 
 @media screen and (max-width: 1000px) {

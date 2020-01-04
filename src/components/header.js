@@ -15,7 +15,7 @@ const Header = ({ pageTitle }) => {
     case pages.INDEX:
       return (
         <StyledHeader>
-          <H1>hi and welcome!</H1>
+          <H1>Hi there!  I'm Brian</H1>
         </StyledHeader>
       )
     case pages.FOOD:

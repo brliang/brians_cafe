@@ -5,30 +5,29 @@ import PropTypes from "prop-types"
 import Contact from "./contact"
 import pages from "../constants/global"
 import StyledFooter from "../styled_components/footer"
-import Li from "../styled_components/li"
-import Ul from "../styled_components/ul"
-import Bread from "../svg/bread.svg"
-import Quill from "../svg/quill.svg"
+// import Li from "../styled_components/li"
+// import Ul from "../styled_components/ul"
+// import Bread from "../svg/bread.svg"
+// import Quill from "../svg/quill.svg"
+
+/* <Ul>
+  <Li>
+    <Bread id="bread" />
+    {pages.FOOD} - coming soon
+  </Li>
+  <Li>
+    <Quill id="quill" />
+    {pages.THOUGHTS} - coming soon
+  </Li>
+</Ul> */
 
 const Footer = ({ pageTitle }) => {
   switch (pageTitle) {
     case pages.INDEX:
       return (
-        <>
+        <StyledFooter>
           <Contact />
-          <StyledFooter>
-            <Ul>
-              <Li>
-                <Bread id="bread" />
-                {pages.FOOD} - coming soon
-              </Li>
-              <Li>
-                <Quill id="quill" />
-                {pages.THOUGHTS} - coming soon
-              </Li>
-            </Ul>
-          </StyledFooter>
-        </>
+        </StyledFooter>
       )
     case pages.FOOD:
     case pages.THOUGHTS:
