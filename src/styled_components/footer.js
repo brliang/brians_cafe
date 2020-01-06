@@ -10,7 +10,11 @@ const Footer = styled.footer`
   border-width: 1px 0px 0px;
   margin: 20px auto 0px auto;
   text-align: center;
-  width: 70%;
+  width: 30%;
+
+  @media screen and (max-width: 1000px) {
+    width: 70%;
+  }
 `
 
 export default Footer

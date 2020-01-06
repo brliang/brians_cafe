@@ -5,7 +5,7 @@ import global from "../styles/global"
 const { colors, font_sizes, font_weights } = global
 
 const Input = styled.input`
-  background-color: ${colors.secondary_color};
+  background-color: ${colors.quaternary_color};
   border-color: ${colors.tertiary_color};
   border-style: dotted;
   border-width: 0px 0px 1px;

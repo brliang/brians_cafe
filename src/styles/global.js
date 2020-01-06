@@ -17,7 +17,7 @@ const global = {
   font_sizes: {
     xs: "12px",
     s: "14px",
-    m: "16px",
+    m: "20px",
     l: "24px",
   },
   font_weights: {

@@ -6,7 +6,7 @@ const { colors, font_sizes, font_weights } = global
 
 const H2 = styled.h2`
   color: ${colors.secondary_font_color};
-  font-size: ${font_sizes.m};
+  font-size: ${font_sizes.s};
   font-weight: ${font_weights.light};
   text-align: center;
 

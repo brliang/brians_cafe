@@ -6,7 +6,7 @@ const { colors, font_sizes, font_weights } = global
 
 const H3 = styled.h3`
   color: ${colors.tertiary_font_color};
-  font-size: ${font_sizes.s};
+  font-size: ${font_sizes.xs};
   font-weight: ${font_weights.light};
   text-align: center;
 
