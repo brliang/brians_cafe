@@ -63,9 +63,12 @@ const Main = ({ pageData, pageTitle }) => {
     case pages.THOUGHTS:
     default:
       return (
-        <StyledMain>
-          <Container pageData={pageData} pageTitle={pageTitle} />
-        </StyledMain>
+        <>
+          <H1>{pageTitle}</H1>
+          <StyledMain>
+            <Container pageData={pageData} pageTitle={pageTitle} />
+          </StyledMain>
+        </>
       )
   }
 }

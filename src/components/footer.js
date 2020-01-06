@@ -7,8 +7,8 @@ import H3 from "../styled_components/h3"
 const Footer = () => {
   return (
     <>
-      <Contact />
       <StyledFooter>
+        <Contact />
         <H3>designed + coded by me (with gatsby!)</H3>
       </StyledFooter>
     </>
