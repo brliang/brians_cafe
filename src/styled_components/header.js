@@ -10,7 +10,7 @@ const Header = styled.header`
   border-style: solid;
   border-width: 0px 0px 1px;
   display: flex;
-  height: 6vh;
+  height: 4vh;
   justify-content: space-around;
   margin: 10px 25% 50px;
 
