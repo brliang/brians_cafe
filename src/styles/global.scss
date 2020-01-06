@@ -65,16 +65,19 @@ body {
   background-color: $linkedin-primary-color;
 }
 
-a:hover {
-  color: $rockset-secondary-color;
-}
-
 a,
-a:active,
 a:focus {
   text-decoration: none;
   color: inherit;
   transition: 0.15s;
+}
+
+a:hover {
+  color: $rockset-secondary-color;
+}
+
+a:active {
+  color: $linkedin-primary-color;
 }
 
 #back_arrow:hover g {
