@@ -10,6 +10,7 @@ const H1 = styled.h1`
   display: flex;
   font-size: ${font_sizes.l};
   font-weight: ${font_weights.bold};
+  margin: 0;
   min-height: 10vh;
   justify-content: center;
 
