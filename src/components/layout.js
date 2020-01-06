@@ -12,6 +12,10 @@ const Layout = ({ pageData, pageTitle }) => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
+        <meta content="Brian Liang" name="author" />
+        <meta content="Brian Liang Website" name="descripton" />
+        <meta content="Brian Liang | Software Engineer" property="og:title" />
+        <meta content="brians.cafe" property="og:site_name" />
         <title>Brian Liang | {pageTitle}</title>
       </Helmet>
       <Header pageTitle={pageTitle} />
