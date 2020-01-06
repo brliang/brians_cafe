@@ -15,6 +15,7 @@ const Paragraph = styled.p`
   transition: 0.1s;
 
   @media screen and (max-width: 1000px) {
+    background-color: ${colors.quaternary_color};
     margin: 20px 5%;
     box-shadow: none;
   }
