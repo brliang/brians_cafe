@@ -3,7 +3,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import StyledHeader from "../styled_components/header"
-import H2 from "../styled_components/H2"
+import H2 from "../styled_components/h2"
 
 const Header = () => {
   return (
