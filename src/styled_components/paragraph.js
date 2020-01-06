@@ -16,7 +16,6 @@ const Paragraph = styled.p`
 
   @media screen and (max-width: 1000px) {
     box-shadow: none;
-    font-size: ${font_sizes.xs};
   }
 `
 
