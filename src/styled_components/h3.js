@@ -10,7 +10,7 @@ const H3 = styled.h3`
   font-weight: ${font_weights.light};
   text-align: center;
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 600px) {
     font-size: ${font_sizes.xs};
   }
 `

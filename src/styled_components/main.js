@@ -10,8 +10,13 @@ const Main = styled.main`
   text-align: center;
 
   @media screen and (max-width: 1000px) {
-    display: block;
     max-width: 85%;
+  }
+
+  @media screen and (max-width: 600px) {
+    display: block;
+    max-width: 95%;
+    margin: 2vh auto;
   }
 `
 

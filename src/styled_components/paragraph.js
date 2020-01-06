@@ -14,9 +14,9 @@ const Paragraph = styled.p`
   text-align: justify;
   transition: 0.1s;
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 600px) {
     background-color: ${colors.quaternary_color};
-    margin: 20px 5%;
+    margin: 20px 0 10px;
     box-shadow: none;
   }
 `

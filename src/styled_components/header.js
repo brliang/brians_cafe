@@ -7,8 +7,8 @@ const Header = styled.header`
   justify-content: space-around;
   margin: 2vh 30% 5vh;
 
-  @media screen and (max-width: 1000px) {
-    margin: 2vh 8% 5vh;
+  @media screen and (max-width: 600px) {
+    margin: 2vh 8% 3vh;
   }
 `
 

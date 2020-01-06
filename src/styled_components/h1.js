@@ -14,8 +14,9 @@ const H1 = styled.h1`
   min-height: 10vh;
   justify-content: center;
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 600px) {
     font-size: ${font_sizes.m};
+    min-height: 5vh;
   }
 `
 
