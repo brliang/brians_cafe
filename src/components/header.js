@@ -1,57 +1,27 @@
 import React from "react"
 
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 
-import pages from "../constants/global"
-import H1 from "../styled_components/h1"
 import StyledHeader from "../styled_components/header"
-import BackArrow from "../svg/back_arrow.svg"
-import Bread from "../svg/bread.svg"
-import Quill from "../svg/quill.svg"
+import H2 from "../styled_components/H2"
 
-const Header = ({ pageTitle }) => {
-  switch (pageTitle) {
-    case pages.INDEX:
-      return (
-        <StyledHeader>
-          <H1>Hi there!  I'm Brian</H1>
-        </StyledHeader>
-      )
-    case pages.FOOD:
-      return (
-        <StyledHeader>
-          <Link to="/">
-            <BackArrow id="back_arrow" />
-          </Link>
-          <H1>{pageTitle}</H1>
-          <Bread id="bread" />
-        </StyledHeader>
-      )
-    case pages.THOUGHTS:
-      return (
-        <StyledHeader>
-          <Link to="/">
-            <BackArrow id="back_arrow" />
-          </Link>
-          <H1>{pageTitle}</H1>
-          <Quill id="quill" />
-        </StyledHeader>
-      )
-    default:
-      return (
-        <StyledHeader>
-          <Link to="/">
-            <BackArrow id="back_arrow" />
-          </Link>
-          <H1>{pageTitle}</H1>
-        </StyledHeader>
-      )
-  }
-}
-
-Header.propTypes = {
-  pageTitle: PropTypes.string.isRequired,
+const Header = () => {
+  return (
+    <StyledHeader>
+      <H2>
+        <Link to="/">home</Link>
+      </H2>
+      <H2>
+        <div class="disabled">photos</div>
+      </H2>
+      <H2>
+        <div class="disabled">thoughts</div>
+      </H2>
+      <H2>
+        <div class="disabled">jetsam</div>
+      </H2>
+    </StyledHeader>
+  )
 }
 
 export default Header

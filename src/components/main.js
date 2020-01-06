@@ -4,23 +4,28 @@ import PropTypes from "prop-types"
 
 import Container from "./container"
 import pages from "../constants/global"
-import StyledBody from "../styled_components/body"
+import H1 from "../styled_components/h1"
+import StyledMain from "../styled_components/main"
 import Paragraph from "../styled_components/paragraph"
+import Span from "../styled_components/span"
 import Brian from "../svg/brian.svg"
 import FirstName from "../svg/firstName.svg"
 import LastName from "../svg/lastName.svg"
 
-const Body = ({ pageData, pageTitle }) => {
+const Main = ({ pageData, pageTitle }) => {
   switch (pageTitle) {
     case pages.INDEX:
       return (
         <>
-          <StyledBody>
-            <Brian id="brian" />
-            <span>
-              <FirstName id="first_name" />
-              <LastName id="last_name" />
-            </span>
+          <H1>Hi there! Welcome</H1>
+          <StyledMain>
+            <div>
+              <Brian id="brian" />
+              <Span>
+                <FirstName id="first_name" />
+                <LastName id="last_name" />
+              </Span>
+            </div>
             <Paragraph>
               I'm an incoming pebble, and aspiring rock-star at{" "}
               <a
@@ -46,24 +51,28 @@ const Body = ({ pageData, pageTitle }) => {
               there's anything else I should write here.
               <br /> <br />
               I intend for this site to shelter an eclectic assortment of my
-              photos, writings, and stray thoughts. Stay tuned!
+              photos, thoughts, and all other jetsam. Stay tuned!
               <br /> <br />
               Anyways, please reach out! I promise I'll respond within 24 hours,
               or I owe you a coffee :)
             </Paragraph>
-          </StyledBody>
+          </StyledMain>
         </>
       )
     case pages.FOOD:
     case pages.THOUGHTS:
     default:
-      return <Container pageData={pageData} pageTitle={pageTitle} />
+      return (
+        <StyledMain>
+          <Container pageData={pageData} pageTitle={pageTitle} />
+        </StyledMain>
+      )
   }
 }
 
-Body.propTypes = {
+Main.propTypes = {
   pageData: PropTypes.object.isRequired,
   pageTitle: PropTypes.string.isRequired,
 }
 
-export default Body
+export default Main

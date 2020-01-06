@@ -1,20 +1,24 @@
 const global = {
   colors: {
-    background: "white",
-    border_color: "lightgray",
-    primary_font: "black",
-    secondary_font: "darkgray",
-    tertiary_font: "indigo",
-    disabled: "lightgray",
+    primary_font_color: "black",
+    secondary_font_color: "#9737ab",
+    tertiary_font_color: "#0077b5",
+
+    primary_color: "#e8d3ff",
+    secondary_color: "#c6cfff",
+    tertiary_color: "#deecff",
+    quaternary_color: "white",
+
+    rockset_primary_color: "#9737ab",
   },
   fonts: {
     helvetica: "helvetica",
   },
   font_sizes: {
-    xs: "14px",
-    s: "16px",
-    m: "24px",
-    l: "30px",
+    xs: "12px",
+    s: "14px",
+    m: "16px",
+    l: "24px",
   },
   font_weights: {
     light: 100,

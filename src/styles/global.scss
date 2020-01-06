@@ -1,13 +1,20 @@
 $font-stack: Helvetica, sans-serif;
-$primary-font: black;
-$secondary-font: darkgray;
-$tertiary-font: indigo;
-$disabled-color: lightgray;
-$cta-hover-color: #bbbbbb;
+$primary-font-color: black;
+$secondary-font-color: #9737ab;
+$tertiary-font-color: #0077b5;
+
+$primary-color: #e8d3ff;
+$secondary-color: #c6cfff;
+$tertiary-color: #deecff;
+$quaternary-color: white;
+
+$disabled-color: gray;
+
 $rockset-primary-color: #9737ab;
 $rockset-secondary-color: #49c0e7;
 $linkedin-primary-color: #0077b5;
 $linkedin-secondary-color: white;
+
 $arrow-color: #3fd886;
 $bread-color: #a7612f;
 $quill-color: #d3d3d3;
@@ -22,13 +29,22 @@ $med-svg: 100px;
 $lg-svg: 140px;
 
 html {
-  color: $primary-font;
+  background-color: $quaternary-color;
+  color: $primary-font-color;
   font: 100% $font-stack;
-  height: 100vh;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.disabled {
+  color: $disabled-color;
 }
 
 ::placeholder {
-  color: $secondary-font;
+  color: $disabled-color;
   font-weight: $light;
 }
 
@@ -49,34 +65,16 @@ html {
   background-color: $linkedin-primary-color;
 }
 
+a:hover {
+  color: $rockset-secondary-color;
+}
+
 a,
-a:hover,
-a:focus,
-a:active {
+a:active,
+a:focus {
   text-decoration: none;
   color: inherit;
-}
-
-input:focus,
-textarea:focus,
-button:focus {
-  outline: none;
-}
-
-button:hover {
-  background-color: $cta-hover-color;
-}
-
-button:active {
-  background-color: $rockset-primary-color;
-}
-
-#bread g {
-  fill: $disabled-color;
-}
-
-#quill g {
-  fill: $disabled-color;
+  transition: 0.15s;
 }
 
 #back_arrow:hover g {
@@ -109,11 +107,7 @@ button:active {
   max-width: $lg-svg;
 }
 
-main {
-  max-width: 35%;
-}
-
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
   #first_name,
   #last_name {
     max-height: $sm-svg;
@@ -123,9 +117,5 @@ main {
   #brian {
     max-height: $med-svg;
     max-width: $med-svg;
-  }
-
-  main {
-    max-width: 85%;
   }
 }
