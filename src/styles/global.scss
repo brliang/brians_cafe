@@ -23,7 +23,7 @@ $light: 100;
 $medium: 400;
 $bold: 900;
 
-$xs-svg: 40px;
+$xs-svg: 25px;
 $sm-svg: 60px;
 $med-svg: 100px;
 $lg-svg: 140px;
@@ -78,18 +78,6 @@ a:hover {
 
 a:active {
   color: $linkedin-primary-color;
-}
-
-#back_arrow:hover g {
-  fill: $arrow-color;
-}
-
-#bread:hover g {
-  fill: $bread-color;
-}
-
-#quill:hover g {
-  fill: $quill-color;
 }
 
 #back_arrow,

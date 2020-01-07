@@ -11,6 +11,7 @@ import Span from "../styled_components/span"
 import Brian from "../svg/brian.svg"
 import FirstName from "../svg/firstName.svg"
 import LastName from "../svg/lastName.svg"
+import Quill from "../svg/quill.svg"
 
 const Main = ({ pageData, pageTitle }) => {
   switch (pageTitle) {
@@ -62,6 +63,18 @@ const Main = ({ pageData, pageTitle }) => {
         </>
       )
     case pages.THOUGHTS:
+      return (
+        <>
+          <Hgroup>
+            <H1>
+              {pageTitle} <Quill id="quill" />
+            </H1>
+          </Hgroup>
+          <StyledMain>
+            <Container pageData={pageData} pageTitle={pageTitle} />
+          </StyledMain>
+        </>
+      )
     case pages.PHOTOS:
     case pages.JETSAM:
     default:
