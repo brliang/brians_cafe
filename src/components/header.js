@@ -1,5 +1,4 @@
 import React from "react"
-
 import { Link } from "gatsby"
 
 import StyledHeader from "../styled_components/header"
@@ -12,10 +11,10 @@ const Header = () => {
         <Link to="/">home</Link>
       </H2>
       <H2>
-        <div class="disabled">photos</div>
+        <Link to="/thoughts/">thoughts</Link>
       </H2>
       <H2>
-        <div class="disabled">thoughts</div>
+        <div class="disabled">photos</div>
       </H2>
       <H2>
         <div class="disabled">jetsam</div>

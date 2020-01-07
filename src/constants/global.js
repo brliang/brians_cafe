@@ -1,7 +1,8 @@
 const pages = {
-  FOOD: "food for thought",
   INDEX: "home",
   THOUGHTS: "thoughts",
+  PHOTOS: "photos",
+  JETSAM: "jetsam",
 }
 
 export default pages

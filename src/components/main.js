@@ -1,10 +1,10 @@
 import React from "react"
-
 import PropTypes from "prop-types"
 
 import Container from "./container"
 import pages from "../constants/global"
 import H1 from "../styled_components/h1"
+import Hgroup from "../styled_components/hgroup"
 import StyledMain from "../styled_components/main"
 import Paragraph from "../styled_components/paragraph"
 import Span from "../styled_components/span"
@@ -17,7 +17,9 @@ const Main = ({ pageData, pageTitle }) => {
     case pages.INDEX:
       return (
         <>
-          <H1>Hi there! Welcome</H1>
+          <Hgroup>
+            <H1>Hi there! I'm Brian</H1>
+          </Hgroup>
           <StyledMain>
             <div>
               <Brian id="brian" />
@@ -51,7 +53,7 @@ const Main = ({ pageData, pageTitle }) => {
               there's anything else I should write here.
               <br /> <br />
               I intend for this site to shelter an eclectic assortment of my
-              photos, thoughts, and all other jetsam. Stay tuned!
+              thoughts, photos, and all other jetsam. Stay tuned!
               <br /> <br />
               Anyways, please reach out! I promise I'll respond within 24 hours,
               or I owe you a coffee :)
@@ -59,12 +61,15 @@ const Main = ({ pageData, pageTitle }) => {
           </StyledMain>
         </>
       )
-    case pages.FOOD:
     case pages.THOUGHTS:
+    case pages.PHOTOS:
+    case pages.JETSAM:
     default:
       return (
         <>
-          <H1>{pageTitle}</H1>
+          <Hgroup>
+            <H1>{pageTitle}</H1>
+          </Hgroup>
           <StyledMain>
             <Container pageData={pageData} pageTitle={pageTitle} />
           </StyledMain>

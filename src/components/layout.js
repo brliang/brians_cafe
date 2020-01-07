@@ -1,5 +1,4 @@
 import React from "react"
-
 import { Helmet } from "react-helmet"
 import PropTypes from "prop-types"
 
@@ -18,7 +17,7 @@ const Layout = ({ pageData, pageTitle }) => {
         <meta content="brians.cafe" property="og:site_name" />
         <title>Brian Liang | {pageTitle}</title>
       </Helmet>
-      <Header pageTitle={pageTitle} />
+      <Header />
       <Main pageData={pageData} pageTitle={pageTitle} />
       <Footer />
     </>

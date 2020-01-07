@@ -9,6 +9,7 @@ const H2 = styled.h2`
   font-size: ${font_sizes.s};
   font-weight: ${font_weights.light};
   text-align: center;
+  width: 100%;
 
   @media screen and (max-width: 600px) {
     font-size: ${font_sizes.s};

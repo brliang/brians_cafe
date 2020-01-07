@@ -1,14 +1,12 @@
 import styled from "styled-components"
 
 const Footer = styled.footer`
-  margin: 5vh auto 0;
-  min-height: 20vh;
+  align-items: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 35vh;
   text-align: center;
-  width: 30%;
-
-  @media screen and (max-width: 600px) {
-    width: 70%;
-  }
 `
 
 export default Footer

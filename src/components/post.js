@@ -1,25 +1,23 @@
 import React from "react"
-
+import { Link } from "gatsby"
 import PropTypes from "prop-types"
 
 import H2 from "../styled_components/h2"
 import H3 from "../styled_components/h3"
-import Paragraph from "../styled_components/paragraph"
 
-const Post = ({ title, date, content }) => {
+const Post = ({ date, path, title }) => {
   return (
-    <Paragraph>
+    <Link to={path}>
       <H2>{title}</H2>
       <H3>{date}</H3>
-      {content}
-    </Paragraph>
+    </Link>
   )
 }
 
 Post.propTypes = {
-  title: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
-  content: PropTypes.string.isRequired,
+  path: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
 }
 
 export default Post

@@ -1,36 +1,29 @@
 import React from "react"
-
 import PropTypes from "prop-types"
 
 import Post from "./post"
 import pages from "../constants/global"
+import Li from "../styled_components/li"
+import Ul from "../styled_components/ul"
 
 const Container = ({ pageData, pageTitle }) => {
   switch (pageTitle) {
-    case pages.FOOD:
-      return (
-        <>
-          {pageData.allFoodCsv.edges.map(row => (
-            <Post
-              title={row.node.title}
-              date={row.node.date}
-              content={row.node.content}
-            />
-          ))}
-        </>
-      )
     case pages.THOUGHTS:
       return (
-        <>
-          {pageData.allThoughtsCsv.edges.map(row => (
-            <Post
-              title={row.node.title}
-              date={row.node.date}
-              content={row.node.content}
-            />
+        <Ul>
+          {pageData.allMarkdownRemark.edges.map(edge => (
+            <Li key={edge.node.frontmatter.title}>
+              <Post
+                date={edge.node.frontmatter.date}
+                path={edge.node.frontmatter.path}
+                title={edge.node.frontmatter.title}
+              />
+            </Li>
           ))}
-        </>
+        </Ul>
       )
+    case pages.PHOTOS:
+    case pages.JETSAM:
     default:
       return <div />
   }

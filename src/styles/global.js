@@ -6,7 +6,7 @@ const global = {
 
     primary_color: "#e8d3ff",
     secondary_color: "#c6cfff",
-    tertiary_color: "#deecff",
+    tertiary_color: "#e4efff",
     quaternary_color: "white",
 
     rockset_primary_color: "#9737ab",

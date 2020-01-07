@@ -10,26 +10,26 @@ const Contact = () => {
   return (
     <form
       action="/"
-      name="contact"
-      method="POST"
-      netlify-honeypot="bot-field"
       data-netlify="true"
+      method="POST"
+      name="contact"
+      netlify-honeypot="bot-field"
     >
-      <input type="hidden" name="form-name" value="contact" />
+      <Input name="form-name" type="hidden" value="contact" />
       <Ul>
         <Li>
-          <Input type="text" name="name" placeholder="name" required="true" />
+          <Input name="name" placeholder="name" type="text" required="true" />
         </Li>
         <Li>
           <Input
-            type="email"
             name="email"
             placeholder="email"
             required="true"
+            type="email"
           />
         </Li>
         <Li>
-          <input type="hidden" name="bot-field" />
+          <Input name="bot-field" type="hidden" />
           <Textarea name="message" placeholder="message" required="true" />
         </Li>
         <Li>
