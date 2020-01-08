@@ -11,7 +11,7 @@ const Footer = () => {
       <StyledFooter>
         <Contact />
         <H3>
-          designed + coded, with&nbsp;<Coffee id="coffee" />
+          developed with love and&nbsp;<Coffee id="coffee" />
         </H3>
       </StyledFooter>
     </>
