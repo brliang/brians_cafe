@@ -7,10 +7,7 @@ import H1 from "../styled_components/h1"
 import Hgroup from "../styled_components/hgroup"
 import StyledMain from "../styled_components/main"
 import Paragraph from "../styled_components/paragraph"
-import Span from "../styled_components/span"
 import Brian from "../svg/brian.svg"
-import FirstName from "../svg/firstName.svg"
-import LastName from "../svg/lastName.svg"
 
 const Main = ({ pageData, pageTitle }) => {
   switch (pageTitle) {
@@ -21,13 +18,7 @@ const Main = ({ pageData, pageTitle }) => {
             <H1>Hi there! I'm Brian</H1>
           </Hgroup>
           <StyledMain>
-            <div>
-              <Brian id="brian" />
-              <Span>
-                <FirstName id="first_name" />
-                <LastName id="last_name" />
-              </Span>
-            </div>
+            <Brian id="brian" />
             <Paragraph>
               I'm an incoming pebble, and aspiring rock-star at{" "}
               <a

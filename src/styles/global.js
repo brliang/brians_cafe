@@ -12,7 +12,8 @@ const global = {
     rockset_primary_color: "#9737ab",
   },
   fonts: {
-    helvetica: "helvetica",
+    helvetica: "Helvetica",
+    rubik: "Rubik"
   },
   font_sizes: {
     xs: "12px",
@@ -22,8 +23,8 @@ const global = {
   },
   font_weights: {
     light: 100,
-    medium: 400,
-    bold: 900,
+    medium: 300,
+    bold: 400,
   },
 }
 
