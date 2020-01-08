@@ -4,21 +4,21 @@ const Main = styled.main`
   align-items: flex-start;
   display: flex;
   justify-content: center;
-  margin: 2vh auto 3vh;
+  margin: 2vh auto 2vh;
   max-width: 40%;
-  min-height: 47vh;
+  min-height: 45vh;
   text-align: center;
 
   @media screen and (max-width: 1200px) {
-    max-width: 50%;
+    max-width: 55%;
   }
 
   @media screen and (max-width: 1000px) {
-    max-width: 60%;
+    max-width: 70%
   }
 
   @media screen and (max-width: 800px) {
-    max-width: 70%;
+    max-width: 85%;
   }
 
   @media screen and (max-width: 600px) {
