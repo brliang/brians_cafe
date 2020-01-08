@@ -13,11 +13,17 @@ export default Thoughts
 
 export const result = graphql`
   query {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    allMarkdownRemark(
+      filter: {
+        frontmatter: { category: { eq: "thoughts" }, date_posted: { gt: "2020" } }
+      }
+      sort: { order: DESC, fields: [frontmatter___last_updated] }
+    ) {
       edges {
         node {
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            date_posted(formatString: "MMMM DD, YYYY")
+            last_updated(formatString: "MMMM DD, YYYY")
             path
             title
           }

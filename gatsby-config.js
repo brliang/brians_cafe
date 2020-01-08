@@ -29,7 +29,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/svg/coffee.svg`,
+        icon: `src/svg/quill.svg`,
       },
     },
     {

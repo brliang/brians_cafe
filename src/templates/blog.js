@@ -2,7 +2,9 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Header from "../components/header"
+import Footer from "../styled_components/footer"
 import H1 from "../styled_components/h1"
+import H2 from "../styled_components/h2"
 import H3 from "../styled_components/h3"
 import Hgroup from "../styled_components/hgroup"
 import Main from "../styled_components/main"
@@ -18,7 +20,7 @@ export default function Template({
       <Header />
       <Hgroup>
         <H1>{frontmatter.title}</H1>
-        <H3>{frontmatter.date}</H3>
+        <H2>{frontmatter.date_posted}</H2>
       </Hgroup>
       <Main>
         <Paragraph>
@@ -28,6 +30,9 @@ export default function Template({
           />
         </Paragraph>
       </Main>
+      <Footer>
+        <H3>last updated: {frontmatter.last_updated}</H3>
+      </Footer>
     </>
   )
 }
@@ -36,7 +41,8 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date_posted(formatString: "MMMM DD, YYYY")
+        last_updated(formatString: "MMMM DD, YYYY")
         path
         title
       }

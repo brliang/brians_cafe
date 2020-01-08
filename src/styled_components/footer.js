@@ -5,7 +5,6 @@ const Footer = styled.footer`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  min-height: 35vh;
   text-align: center;
 `
 

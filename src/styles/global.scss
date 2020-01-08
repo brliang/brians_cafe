@@ -80,8 +80,13 @@ a:active {
   color: $linkedin-primary-color;
 }
 
+#coffee g {
+  fill: $linkedin-primary-color;
+}
+
 #back_arrow,
 #bread,
+#coffee,
 #quill {
   max-height: $xs-svg;
   max-width: $xs-svg;
@@ -112,3 +117,11 @@ a:active {
 }
 
 // Styling for Markdown
+
+li {
+  margin: 10px 0px;
+}
+
+ul li {
+  list-style: square;
+}

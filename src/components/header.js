@@ -17,7 +17,7 @@ const Header = () => {
         <div class="disabled">photos</div>
       </H2>
       <H2>
-        <div class="disabled">jetsam</div>
+        <Link to="/jetsam/">jetsam</Link>
       </H2>
     </StyledHeader>
   )

@@ -5,7 +5,7 @@ const Hgroup = styled.hgroup`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  min-height: 5vh;
+  min-height: 10vh;
 `
 
 export default Hgroup

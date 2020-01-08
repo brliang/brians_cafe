@@ -9,12 +9,16 @@ import Ul from "../styled_components/ul"
 const Container = ({ pageData, pageTitle }) => {
   switch (pageTitle) {
     case pages.THOUGHTS:
+    case pages.JETSAM:
       return (
         <Ul>
           {pageData.allMarkdownRemark.edges.map(edge => (
             <Li key={edge.node.frontmatter.title}>
               <Post
-                date={edge.node.frontmatter.date}
+                date_posted={"posted: " + edge.node.frontmatter.date_posted}
+                last_updated={
+                  "last updated: " + edge.node.frontmatter.last_updated
+                }
                 path={edge.node.frontmatter.path}
                 title={edge.node.frontmatter.title}
               />
@@ -23,7 +27,6 @@ const Container = ({ pageData, pageTitle }) => {
         </Ul>
       )
     case pages.PHOTOS:
-    case pages.JETSAM:
     default:
       return <div />
   }

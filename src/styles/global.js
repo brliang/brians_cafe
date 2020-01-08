@@ -18,7 +18,7 @@ const global = {
     xs: "12px",
     s: "14px",
     m: "20px",
-    l: "24px",
+    l: "28px",
   },
   font_weights: {
     light: 100,
