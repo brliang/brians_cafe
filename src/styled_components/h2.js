@@ -11,6 +11,7 @@ const H2 = styled.h2`
   font-size: ${font_sizes.s};
   font-weight: ${font_weights.light};
   justify-content: center;
+  margin: 0 0 3px;
   width: 100%;
 
   @media screen and (max-width: 600px) {

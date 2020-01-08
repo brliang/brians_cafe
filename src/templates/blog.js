@@ -2,7 +2,6 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Header from "../components/header"
-import Footer from "../styled_components/footer"
 import H1 from "../styled_components/h1"
 import H2 from "../styled_components/h2"
 import H3 from "../styled_components/h3"
@@ -30,9 +29,7 @@ export default function Template({
           />
         </Paragraph>
       </Main>
-      <Footer>
-        <H3>last updated: {frontmatter.last_updated}</H3>
-      </Footer>
+      <H3>last updated: {frontmatter.last_updated}</H3>
     </>
   )
 }

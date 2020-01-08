@@ -14,13 +14,12 @@ export const result = graphql`
       filter: {
         frontmatter: { category: { eq: "jetsam" }, date_posted: { gt: "2020" } }
       }
-      sort: { order: DESC, fields: [frontmatter___last_updated] }
+      sort: { order: DESC, fields: [frontmatter___date_posted] }
     ) {
       edges {
         node {
           frontmatter {
             date_posted(formatString: "MMMM DD, YYYY")
-            last_updated(formatString: "MMMM DD, YYYY")
             path
             title
           }

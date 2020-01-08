@@ -4,31 +4,30 @@ const Main = styled.main`
   align-items: flex-start;
   display: flex;
   justify-content: center;
-  margin: 5vh auto 5vh;
+  margin: 2vh auto 3vh;
   max-width: 40%;
-  min-height: 25vh;
+  min-height: 47vh;
   text-align: center;
 
   @media screen and (max-width: 1200px) {
-    max-width: 55%;
-  }
-
-  @media screen and (max-width: 1200px) {
-    max-width: 70%;
+    max-width: 50%;
   }
 
   @media screen and (max-width: 1000px) {
-    max-width: 85%;
+    max-width: 60%;
+  }
+
+  @media screen and (max-width: 800px) {
+    max-width: 70%;
   }
 
   @media screen and (max-width: 600px) {
     display: block;
-    max-width: 75%;
-    margin: 2vh auto 2vh;
+    max-width: 80%;
   }
 
   @media screen and (max-width: 400px) {
-    max-width: 95%;
+    max-width: 90%;
   }
 `
 

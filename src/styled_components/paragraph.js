@@ -10,7 +10,7 @@ const Paragraph = styled.p`
   font-size: ${font_sizes.s};
   font-weight: ${font_weights.light};
   margin: 0 5%;
-  padding: 10px;
+  padding: 20px;
   text-align: justify;
   transition: 0.1s;
 

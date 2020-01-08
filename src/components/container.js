@@ -15,10 +15,7 @@ const Container = ({ pageData, pageTitle }) => {
           {pageData.allMarkdownRemark.edges.map(edge => (
             <Li key={edge.node.frontmatter.title}>
               <Post
-                date_posted={"posted: " + edge.node.frontmatter.date_posted}
-                last_updated={
-                  "last updated: " + edge.node.frontmatter.last_updated
-                }
+                date_posted={edge.node.frontmatter.date_posted}
                 path={edge.node.frontmatter.path}
                 title={edge.node.frontmatter.title}
               />

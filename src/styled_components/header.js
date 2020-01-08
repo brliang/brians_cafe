@@ -8,7 +8,7 @@ const Header = styled.header`
   margin: 2vh 30% 5vh;
 
   @media screen and (max-width: 600px) {
-    margin: 2vh 8% 3vh;
+    margin: 2vh 8% 5vh;
   }
 `
 
