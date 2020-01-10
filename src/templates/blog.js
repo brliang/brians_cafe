@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import { graphql } from "gatsby"
 
 import Header from "../components/header"
@@ -16,6 +17,14 @@ export default function Template({
   const { frontmatter, html } = markdownRemark
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <meta content="Brian Liang" name="author" />
+        <meta content="Brian Liang Website" name="descripton" />
+        <meta content="Brian Liang | Software Engineer" property="og:title" />
+        <meta content="brians.cafe" property="og:site_name" />
+        <title>Brian Liang | {frontmatter.title}</title>
+      </Helmet>
       <Header />
       <Hgroup>
         <H1>{frontmatter.title}</H1>
