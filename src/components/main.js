@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import Container from "./container"
+import Footer from "./footer"
 import pages from "../constants/global"
 import H1 from "../styled_components/h1"
 import Hgroup from "../styled_components/hgroup"
@@ -50,6 +51,7 @@ const Main = ({ pageData, pageTitle }) => {
               or I owe you a coffee :)
             </Paragraph>
           </StyledMain>
+          <Footer />
         </>
       )
     case pages.THOUGHTS:

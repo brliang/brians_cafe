@@ -9,8 +9,8 @@ const Textarea = styled.textarea`
   border: 1px dotted ${colors.secondary_color};
   font-size: ${font_sizes.xs};
   font-weight: ${font_weights.light};
-  height: 50px;
-  width: 200px;
+  height: 4vh;
+  width: calc(100px + 5vw);
 
   &:focus {
     outline: none;

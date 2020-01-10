@@ -16,10 +16,10 @@ const global = {
     rubik: "Rubik"
   },
   font_sizes: {
-    xs: "12px",
-    s: "14px",
-    m: "16px",
-    l: "24px",
+    xs: "calc(6pt + .25vw)",
+    s: "calc(6pt + .5vw)",
+    m: "calc(8pt + .5vw)",
+    l: "calc(8pt + 1.5vw)",
   },
   font_weights: {
     light: 100,

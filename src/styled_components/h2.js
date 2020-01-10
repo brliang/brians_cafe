@@ -9,14 +9,10 @@ const H2 = styled.h2`
   color: ${colors.secondary_font_color};
   display: flex;
   font-size: ${font_sizes.s};
-  font-weight: ${font_weights.light};
+  font-weight: ${font_weights.medium};
   justify-content: center;
-  margin: 0 0 3px;
-  width: 100%;
-
-  @media screen and (max-width: 600px) {
-    font-size: ${font_sizes.s};
-  }
+  margin: 0 0 0.2vh;
+  width: 100vw;
 `
 
 export default H2

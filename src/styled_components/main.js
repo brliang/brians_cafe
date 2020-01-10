@@ -5,29 +5,32 @@ const Main = styled.main`
   display: flex;
   justify-content: center;
   margin: 2vh auto 2vh;
-  max-width: 40%;
-  min-height: 45vh;
+  max-width: 40vw;
   text-align: center;
 
+  @media screen and (max-width: 1400px) {
+    max-width: 50vw;
+  }
+
   @media screen and (max-width: 1200px) {
-    max-width: 55%;
+    max-width: 60vw;
   }
 
   @media screen and (max-width: 1000px) {
-    max-width: 70%
+    max-width: 70vw
   }
 
   @media screen and (max-width: 800px) {
-    max-width: 85%;
+    max-width: 80vw;
   }
 
   @media screen and (max-width: 600px) {
     display: block;
-    max-width: 80%;
+    max-width: 70vw;
   }
 
   @media screen and (max-width: 400px) {
-    max-width: 90%;
+    max-width: 80vw;
   }
 `
 

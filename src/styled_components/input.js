@@ -11,7 +11,7 @@ const Input = styled.input`
   border-width: 0px 0px 1px;
   font-size: ${font_sizes.xs};
   font-weight: ${font_weights.light};
-  width: 200px;
+  width: calc(100px + 5vw);
 
   &:focus {
     outline: none;

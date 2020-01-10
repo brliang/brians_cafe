@@ -23,10 +23,10 @@ $light: 100;
 $medium: 400;
 $bold: 500;
 
-$xs-svg: 25px;
-$sm-svg: 60px;
-$med-svg: 100px;
-$lg-svg: 140px;
+$xs-svg: calc(20px + .5vw);
+$sm-svg: calc(30px + 2.5vw);
+$med-svg: calc(40px + 4vw);
+$lg-svg: calc(50px + 5.5vw);
 
 html {
   background-color: $quaternary-color;
@@ -101,19 +101,6 @@ a:active {
 #brian {
   max-height: $lg-svg;
   max-width: $lg-svg;
-}
-
-@media screen and (max-width: 600px) {
-  #first_name,
-  #last_name {
-    max-height: $sm-svg;
-    max-width: $sm-svg;
-  }
-
-  #brian {
-    max-height: $med-svg;
-    max-width: $med-svg;
-  }
 }
 
 // Styling for Markdown

@@ -2,7 +2,6 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import PropTypes from "prop-types"
 
-import Footer from "./footer"
 import Header from "./header"
 import Main from "./main"
 
@@ -19,7 +18,6 @@ const Layout = ({ pageData, pageTitle }) => {
       </Helmet>
       <Header />
       <Main pageData={pageData} pageTitle={pageTitle} />
-      <Footer />
     </>
   )
 }

@@ -1,16 +1,16 @@
 ---
 path: "/thoughts/introduction"
 date_posted: "2020-01-07"
-last_updated: "2020-01-07"
+last_updated: "2020-01-10"
 title: "Introduction"
 category: "thoughts"
 ---
 
-There are a few reasons why this website's domain name is "brians.cafe".
+For anyone wondering why this website's domain name is "brians.cafe":
 
 1. _bliang.com_, _brian.com_, _liang.com_, and _brianliang.com_ were all taken
 2. **I love cafes**
-3. I promised myself I would open a cafe before turning 35 (14 years to go)
+3. I promised myself I would open a cafe at some point in my life
 
    (When that eventually happens, I won't have to make another website!)
 
