@@ -26,11 +26,15 @@ const Main = styled.main`
 
   @media screen and (max-width: 600px) {
     display: block;
-    max-width: 70vw;
+    max-width: 85vw;
   }
 
   @media screen and (max-width: 400px) {
-    max-width: 80vw;
+    max-width: 90vw;
+  }
+
+  @media screen and (max-width: 300px) {
+    max-width: 95vw;
   }
 `
 
