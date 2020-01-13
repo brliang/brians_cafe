@@ -32,7 +32,7 @@ const Main = ({ pageData, pageTitle }) => {
               </a>
               .
               <br />
-              Survived polar vortex at{" "}
+              Studied CS at{" "}
               <a
                 id="northwestern"
                 href="https://www.mccormick.northwestern.edu/computer-science/"
