@@ -22,7 +22,7 @@ const Main = ({ pageData, pageTitle }) => {
           <StyledMain>
             <Brian id="brian" />
             <Paragraph>
-              I'm an incoming pebble at{" "}
+              Incoming pebble at{" "}
               <a
                 id="rockset"
                 href="https://www.rockset.com"

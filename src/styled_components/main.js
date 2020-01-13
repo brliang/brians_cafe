@@ -8,6 +8,10 @@ const Main = styled.main`
   max-width: 40vw;
   text-align: center;
 
+  @media screen and (min-width: 1800px) {
+    max-width: 30vw;
+  }
+
   @media screen and (max-width: 800px) {
     max-width: 60vw;
   }
@@ -18,6 +22,10 @@ const Main = styled.main`
 
   @media screen and (max-width: 600px) {
     max-width: 90vw;
+  }
+
+  @media screen and (max-width: 400px) {
+    max-width: 95vw;
   }
 `
 
