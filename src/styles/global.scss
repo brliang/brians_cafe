@@ -8,7 +8,7 @@ $secondary-color: #c6cfff;
 $tertiary-color: #e4efff;
 $quaternary-color: white;
 
-$disabled-color: gray;
+$disabled-color: lightgray;
 
 $rockset-primary-color: #9737ab;
 $rockset-secondary-color: #49c0e7;
@@ -23,10 +23,10 @@ $light: 100;
 $medium: 400;
 $bold: 500;
 
-$xs-svg: calc(20px + .5vw);
+$xs-svg: calc(15px + 0.5vw);
 $sm-svg: calc(30px + 2.5vw);
-$med-svg: calc(40px + 4vw);
-$lg-svg: calc(50px + 5.5vw);
+$med-svg: calc(45px + 4vw);
+$lg-svg: calc(60px + 5.5vw);
 
 html {
   background-color: $quaternary-color;
@@ -44,7 +44,6 @@ body {
 }
 
 ::placeholder {
-  color: $disabled-color;
   font-weight: $light;
 }
 
@@ -52,17 +51,18 @@ body {
   color: $rockset-primary-color;
 }
 
-#rockset:hover {
-  background-color: $rockset-secondary-color;
-}
-
 #linkedin {
   color: $linkedin-primary-color;
 }
 
-#linkedin:hover {
-  color: $linkedin-secondary-color;
-  background-color: $linkedin-primary-color;
+#northwestern {
+  color: $secondary-font-color;
+}
+
+#linkedin:hover,
+#northwestern:hover,
+#rockset:hover {
+  text-decoration: underline;
 }
 
 a,
@@ -73,15 +73,11 @@ a:focus {
 }
 
 a:hover {
-  color: $rockset-secondary-color;
+  color: $rockset-primary-color;
 }
 
 a:active {
   color: $linkedin-primary-color;
-}
-
-#coffee g {
-  fill: $linkedin-primary-color;
 }
 
 #back_arrow,
@@ -111,7 +107,7 @@ li {
 
 ol,
 ul {
-  padding: 0 20px;
+  padding: 0 30px;
 }
 
 strong {
@@ -120,11 +116,4 @@ strong {
 
 ul li {
   list-style: square;
-}
-
-@media screen and (max-width: 600px) {
-  ul,
-  ol {
-    padding: 0 10px;
-  }
 }

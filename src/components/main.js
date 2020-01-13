@@ -21,7 +21,7 @@ const Main = ({ pageData, pageTitle }) => {
           <StyledMain>
             <Brian id="brian" />
             <Paragraph>
-              I'm an incoming pebble, and aspiring rock-star at{" "}
+              I'm an incoming pebble at{" "}
               <a
                 id="rockset"
                 href="https://www.rockset.com"
@@ -30,8 +30,19 @@ const Main = ({ pageData, pageTitle }) => {
               >
                 Rockset
               </a>
-              . Born and raised in New Jersey (best state). Survived three
-              winters at Northwestern University. Previous stints at Expedia,{" "}
+              .
+              <br />
+              Survived polar vortex at{" "}
+              <a
+                id="northwestern"
+                href="https://www.mccormick.northwestern.edu/computer-science/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Northwestern.{" "}
+              </a>
+              <br />
+              Previous: Expedia,{" "}
               <a
                 id="linkedin"
                 href="https://www.linkedin.com/in/brian-liang/"
@@ -40,15 +51,12 @@ const Main = ({ pageData, pageTitle }) => {
               >
                 LinkedIn
               </a>
-              , and Facebook. Big fan of coffee, cafes, bakeries, food, cooking,
-              running, cities, nature, photography... Hmmm. Let me know if
-              there's anything else I should write here.
+              , Facebook.
               <br /> <br />
               I intend for this site to shelter an eclectic assortment of my
               thoughts, photos, and all other jetsam. Stay tuned!
               <br /> <br />
-              Anyways, please reach out! I promise I'll respond within 24 hours,
-              or I owe you a coffee :)
+              Anyways, please reach out! I promise I'll respond within 24 hours.
             </Paragraph>
           </StyledMain>
           <Footer />

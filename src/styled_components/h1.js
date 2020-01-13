@@ -11,7 +11,7 @@ const H1 = styled.h1`
   font-size: ${font_sizes.l};
   font-weight: ${font_weights.bold};
   justify-content: center;
-  margin: 0 0 0.2vh;
+  margin: 0 0 1vh;
   width: 100vw;
 `
 

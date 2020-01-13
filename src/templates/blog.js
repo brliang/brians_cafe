@@ -29,7 +29,6 @@ export default function Template({
       <Hgroup>
         <H1>{frontmatter.title}</H1>
         <H2>{frontmatter.date_posted}</H2>
-        <H3>last updated: {frontmatter.last_updated}</H3>
       </Hgroup>
       <Main>
         <Paragraph>
@@ -39,6 +38,7 @@ export default function Template({
           />
         </Paragraph>
       </Main>
+      <H3>last updated: {frontmatter.last_updated}</H3>
     </>
   )
 }

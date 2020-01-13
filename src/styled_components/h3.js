@@ -6,12 +6,12 @@ const { colors, font_sizes, font_weights } = global
 
 const H3 = styled.h3`
   align-items: center;
-  color: ${colors.tertiary_font_color};
+  color: ${colors.primary_font_color};
   display: flex;
   font-size: ${font_sizes.xs};
   font-weight: ${font_weights.light};
   justify-content: center;
-  margin: 0 0 0.2vh;
+  margin: 0 0 0.3vh;
   width: 100vw;
 `
 

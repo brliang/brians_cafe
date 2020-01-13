@@ -5,7 +5,7 @@ import global from "../styles/global"
 const { colors, font_sizes, font_weights } = global
 
 const Button = styled.button`
-  background-color: ${colors.primary_color};
+  background-color: ${colors.tertiary_color};
   border: none;
   color: ${colors.primary_font_color};
   font-size: ${font_sizes.xs};
@@ -20,7 +20,7 @@ const Button = styled.button`
   }
 
   &:active {
-    background-color: ${colors.tertiary_color};
+    background-color: ${colors.primary_color};
   }
 `
 
