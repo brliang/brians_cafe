@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import PropTypes from "prop-types"
 
 import Container from "./container"
@@ -32,7 +33,7 @@ const Main = ({ pageData, pageTitle }) => {
               </a>
               .
               <br />
-              Studied CS at{" "}
+              CS at{" "}
               <a
                 id="northwestern"
                 href="https://www.mccormick.northwestern.edu/computer-science/"
@@ -53,8 +54,10 @@ const Main = ({ pageData, pageTitle }) => {
               </a>
               , Facebook.
               <br /> <br />
-              I intend for this site to shelter an eclectic assortment of my
-              thoughts, photos, and all other jetsam. Stay tuned!
+              This site shelters an eclectic assortment of my{" "}
+              <Link to="/thoughts/">thoughts</Link>, photos, and all other{" "}
+              <Link to="/jetsam/">jetsam</Link>
+              . Stay tuned!
               <br /> <br />
               Anyways, please reach out! I promise I'll respond within 24 hours.
             </Paragraph>

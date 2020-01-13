@@ -29,8 +29,10 @@ $med-svg: calc(45px + 4vw);
 $lg-svg: calc(60px + 5.5vw);
 
 html {
+  align-items: center;
   background-color: $quaternary-color;
   color: $primary-font-color;
+  display: flex;
   font: 100% $font-stack;
   height: 100%;
 }
