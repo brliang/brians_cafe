@@ -34,7 +34,7 @@ html {
   color: $primary-font-color;
   display: flex;
   font: 100% $font-stack;
-  height: 100%;
+  min-height: 100%;
 }
 
 body {
