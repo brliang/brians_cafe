@@ -39,7 +39,6 @@ const Main = ({ pageData, pageTitle }) => {
                   </a>
                 </Li>
               </Ul>
-              <br /> <br />
               <strong>previous: </strong>
               <Ul>
                 <Li>
