@@ -19,8 +19,8 @@ $arrow-color: #3fd886;
 $bread-color: #a7612f;
 $quill-color: #d3d3d3;
 
-$light: 200;
-$medium: 400;
+$light: 100;
+$medium: 300;
 $bold: 500;
 
 $xs-svg: calc(15px + 0.5vw);
@@ -55,9 +55,6 @@ body {
 
 #linkedin {
   color: $linkedin-primary-color;
-}
-
-#northwestern {
 }
 
 #linkedin:hover,
