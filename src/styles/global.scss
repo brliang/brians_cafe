@@ -1,11 +1,11 @@
-$font-stack: Rubik, sans-serif;
+$font-stack: Josefin Sans, sans-serif;
 $primary-font-color: black;
 $secondary-font-color: #9737ab;
 $tertiary-font-color: #0077b5;
 
 $primary-color: #e8d3ff;
 $secondary-color: #c6cfff;
-$tertiary-color: #e4efff;
+$tertiary-color: #e4efff9c;
 $quaternary-color: white;
 
 $disabled-color: lightgray;
@@ -19,17 +19,16 @@ $arrow-color: #3fd886;
 $bread-color: #a7612f;
 $quill-color: #d3d3d3;
 
-$light: 100;
+$light: 200;
 $medium: 400;
 $bold: 500;
 
 $xs-svg: calc(15px + 0.5vw);
-$sm-svg: calc(30px + 2.5vw);
-$med-svg: calc(45px + 4vw);
-$lg-svg: calc(60px + 5.5vw);
+$sm-svg: calc(30px + 1vw);
+$med-svg: calc(45px + 2vw);
+$lg-svg: calc(60px + 3vw);
 
 html {
-  align-items: center;
   background-color: $quaternary-color;
   color: $primary-font-color;
   display: flex;
@@ -46,6 +45,7 @@ body {
 }
 
 ::placeholder {
+  font-family: $font-stack;
   font-weight: $light;
 }
 
@@ -58,7 +58,6 @@ body {
 }
 
 #northwestern {
-  color: $secondary-font-color;
 }
 
 #linkedin:hover,
@@ -103,13 +102,10 @@ a:active {
 
 // Styling for Markdown
 
-li {
-  margin: 10px 0px;
-}
-
 ol,
 ul {
-  padding: 0 30px;
+  margin: 5px 0;
+  padding: 0 15px;
 }
 
 strong {
@@ -118,4 +114,8 @@ strong {
 
 ul li {
   list-style: square;
+}
+
+li {
+  margin-bottom: 10px;
 }

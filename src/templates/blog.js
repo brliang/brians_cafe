@@ -25,7 +25,7 @@ export default function Template({
         <meta content="brians.cafe" property="og:site_name" />
         <title>Brian Liang | {frontmatter.title}</title>
       </Helmet>
-      <Header />
+      <Header pageTitle={frontmatter.title} />
       <Hgroup>
         <H1>{frontmatter.title}</H1>
         <H2>{frontmatter.date_posted}</H2>
@@ -36,9 +36,9 @@ export default function Template({
             className="blog-post-content"
             dangerouslySetInnerHTML={{ __html: html }}
           />
+          <H3>last updated: {frontmatter.last_updated}</H3>
         </Paragraph>
       </Main>
-      <H3>last updated: {frontmatter.last_updated}</H3>
     </>
   )
 }

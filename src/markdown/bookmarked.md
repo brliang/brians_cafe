@@ -6,7 +6,7 @@ title: "bookmarked"
 category: "jetsam"
 ---
 
-Things I keep bookmarked, that have enriched my perspectives.
+Things I keep bookmarked:
 
 1. **[The Disciplined Pursuit of Less](https://www.youtube.com/watch?v=hsFefdPhL3w)**
 

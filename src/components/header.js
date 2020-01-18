@@ -6,7 +6,14 @@ import pages from "../constants/global"
 import StyledHeader from "../styled_components/header"
 import H2 from "../styled_components/h2"
 
-/*
+const Header = ({ pageTitle }) => {
+  switch (pageTitle) {
+    case pages.INDEX:
+      return <StyledHeader />
+    case pages.THOUGHTS:
+    case pages.JETSAM:
+    case pages.PHOTOS:
+    default:
       return (
         <StyledHeader>
           <H2>
@@ -23,15 +30,6 @@ import H2 from "../styled_components/h2"
           </H2>
         </StyledHeader>
       )
-*/
-
-const Header = ({ pageTitle }) => {
-  switch (pageTitle) {
-    case pages.THOUGHTS:
-    case pages.JETSAM:
-    case pages.PHOTOS:
-    default:
-      return <div />
   }
 }
 

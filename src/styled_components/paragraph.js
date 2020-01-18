@@ -12,7 +12,7 @@ const Paragraph = styled.p`
   line-height: 1.25;
   margin: 0 1vw;
   padding: 20px;
-  text-align: justify;
+  text-align: left;
   transition: 0.1s;
 `
 

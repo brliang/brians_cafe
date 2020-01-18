@@ -7,8 +7,10 @@ import Footer from "./footer"
 import pages from "../constants/global"
 import H1 from "../styled_components/h1"
 import Hgroup from "../styled_components/hgroup"
+import Li from "../styled_components/li"
 import StyledMain from "../styled_components/main"
 import Paragraph from "../styled_components/paragraph"
+import Ul from "../styled_components/ul"
 import Brian from "../svg/brian.svg"
 
 const Main = ({ pageData, pageTitle }) => {
@@ -17,49 +19,50 @@ const Main = ({ pageData, pageTitle }) => {
       return (
         <>
           <Hgroup>
-            <H1>Hi there! I'm Brian</H1>
+            <H1>
+              <Brian id="brian" /> Hi! - Brian Liang
+            </H1>
           </Hgroup>
           <StyledMain>
-            <Brian id="brian" />
             <Paragraph>
-              Incoming pebble at{" "}
+              <strong>present:</strong> swe @{" "}
               <a
                 id="rockset"
                 href="https://www.rockset.com"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Rockset
+                rockset
               </a>
-              .
-              <br />
-              CS at{" "}
-              <a
-                id="northwestern"
-                href="https://www.mccormick.northwestern.edu/computer-science/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Northwestern.{" "}
-              </a>
-              <br />
-              Previous: Expedia,{" "}
-              <a
-                id="linkedin"
-                href="https://www.linkedin.com/in/brian-liang/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                LinkedIn
-              </a>
-              , Facebook.
               <br /> <br />
+              <strong>previous: </strong>
+              <Ul>
+                <Li>
+                  intern @ expedia,{" "}
+                  <a
+                    id="linkedin"
+                    href="https://www.linkedin.com/in/brian-liang/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    linkedin
+                  </a>
+                  , facebook
+                </Li>
+                <Li>computer science @ northwestern</Li>
+              </Ul>
               This site shelters an eclectic assortment of my{" "}
-              <Link to="/thoughts/">thoughts</Link>, photos, and all other{" "}
-              <Link to="/jetsam/">jetsam</Link>
-              . Stay tuned!
+              <Link to="/thoughts/">
+                <strong>thoughts</strong>
+              </Link>
+              , photos, and all other{" "}
+              <Link to="/jetsam/">
+                <strong>jetsam</strong>
+              </Link>
+              .
               <br /> <br />
-              Anyways, please reach out! I promise I'll respond within 24 hours.
+              If you have an inquiry, or want to say hi, feel free to send a
+              message! I'll respond within 24 hours.
             </Paragraph>
           </StyledMain>
           <Footer />

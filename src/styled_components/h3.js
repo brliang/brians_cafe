@@ -12,7 +12,6 @@ const H3 = styled.h3`
   font-weight: ${font_weights.light};
   justify-content: center;
   margin: 0 0 0.3vh;
-  width: 100vw;
 `
 
 export default H3

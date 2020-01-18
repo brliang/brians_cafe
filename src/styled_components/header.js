@@ -5,6 +5,7 @@ const Header = styled.header`
   display: flex;
   justify-content: space-around;
   margin: 5vh 22vw 5vh;
+  min-height: 4vh;
 `
 
 export default Header

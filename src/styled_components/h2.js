@@ -12,7 +12,6 @@ const H2 = styled.h2`
   font-weight: ${font_weights.medium};
   justify-content: center;
   margin: 0 0 0.4vh;
-  width: 100vw;
 `
 
 export default H2
