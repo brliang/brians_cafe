@@ -33,21 +33,18 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Josefin Sans`,
-            variants: [`100`, `300`, `500`],
-          },
-        ],
-      },
-    },
-    {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
           include: /svg/,
+        },
+      },
+    },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        google: {
+          families: ["Josefin Sans:100,300,500"],
         },
       },
     },

@@ -24,8 +24,8 @@ const Main = styled.main`
     max-width: 80vw;
   }
 
-  @media screen and (max-width: 400px) {
-    max-width: 85vw;
+  @media screen and (max-width: 500px) {
+    max-width: 95vw;
   }
 `
 
