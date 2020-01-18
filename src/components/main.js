@@ -20,20 +20,24 @@ const Main = ({ pageData, pageTitle }) => {
         <>
           <Hgroup>
             <H1>
-              <Brian id="brian" /> Hi! - Brian Liang
+              <Brian id="brian" /> Brian Liang
             </H1>
           </Hgroup>
           <StyledMain>
             <Paragraph>
-              <strong>present:</strong> swe @{" "}
-              <a
-                id="rockset"
-                href="https://www.rockset.com"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                rockset
-              </a>
+              <Ul>
+                <Li>
+                  <strong>present:</strong> swe @{" "}
+                  <a
+                    id="rockset"
+                    href="https://www.rockset.com"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    rockset
+                  </a>
+                </Li>
+              </Ul>
               <br /> <br />
               <strong>previous: </strong>
               <Ul>
