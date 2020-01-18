@@ -25,9 +25,10 @@ const Main = ({ pageData, pageTitle }) => {
           </Hgroup>
           <StyledMain>
             <Paragraph>
+              <strong>present:</strong>
               <Ul>
                 <Li>
-                  <strong>present:</strong> swe @{" "}
+                  swe @{" "}
                   <a
                     id="rockset"
                     href="https://www.rockset.com"
