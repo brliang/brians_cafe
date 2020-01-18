@@ -12,7 +12,7 @@ const global = {
     rockset_primary_color: "#9737ab",
   },
   fonts: {
-    josefin_sans: "Josefin Sans",
+    josefin_sans: "Josefin Sans, sans-serif",
     helvetica: "Helvetica",
     rubik: "Rubik",
   },
