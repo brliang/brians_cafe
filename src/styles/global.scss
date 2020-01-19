@@ -148,14 +148,14 @@ a:active {
 }
 
 .photos {
-  column-count: 3;
+  column-count: 2;
   column-gap: 2vw;
   margin: 0 auto;
   max-width: 60vw;
 
   @media screen and (max-width: 800px) {
     column-count: 2;
-    max-width: 70vw;
+    max-width: 80vw;
   }
 }
 
