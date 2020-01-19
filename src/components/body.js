@@ -6,7 +6,6 @@ import Glossary from "./glossary"
 import Footer from "./footer"
 import pages from "../constants/global"
 import H1 from "../styled_components/h1"
-import Paragraph from "../styled_components/paragraph"
 import Brian from "../svg/brian.svg"
 
 const Body = ({ pageData, pageTitle }) => {
@@ -17,7 +16,7 @@ const Body = ({ pageData, pageTitle }) => {
           <H1>
             <Brian id="brian" /> Brian Liang
           </H1>
-          <Paragraph>
+          <main>
             <strong>present:</strong>
             <ul>
               <li>
@@ -60,7 +59,7 @@ const Body = ({ pageData, pageTitle }) => {
             <br /> <br />
             If you have an inquiry, or want to say hi, feel free to send a
             message! I'll respond within 24 hours.
-          </Paragraph>
+          </main>
           <Footer />
         </>
       )

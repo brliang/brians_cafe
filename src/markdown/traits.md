@@ -6,7 +6,7 @@ title: "traits"
 category: "jetsam"
 ---
 
-Traits I value:
+Valuable traits:
 
 1. **Self-Aware**
 

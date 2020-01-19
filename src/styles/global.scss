@@ -41,6 +41,50 @@ body {
   margin: 0;
 }
 
+main {
+  background-color: $tertiary-color;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  // font-size: ${font_sizes.s};
+  font-weight: $light;
+  line-height: 1.25;
+  margin: 2vh auto 8vh;
+  max-width: 25vw;
+  padding: 20px;
+  text-align: left;
+
+  @media screen and (min-width: 2000px) {
+    max-width: 15vw;
+  }
+
+  @media screen and (max-width: 1200px) {
+    max-width: 30vw;
+  }
+
+  @media screen and (max-width: 1000px) {
+    max-width: 35vw;
+  }
+
+  @media screen and (max-width: 900px) {
+    max-width: 45vw;
+  }
+
+  @media screen and (max-width: 800px) {
+    max-width: 55vw;
+  }
+
+  @media screen and (max-width: 700px) {
+    max-width: 65vw;
+  }
+
+  @media screen and (max-width: 600px) {
+    max-width: 75vw;
+  }
+
+  @media screen and (max-width: 500px) {
+    max-width: 85vw;
+  }
+}
+
 .disabled {
   color: $disabled-color;
 }

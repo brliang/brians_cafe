@@ -6,7 +6,6 @@ import Header from "../components/header"
 import H1 from "../styled_components/h1"
 import H2 from "../styled_components/h2"
 import H3 from "../styled_components/h3"
-import Paragraph from "../styled_components/paragraph"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -26,13 +25,13 @@ export default function Template({
       <Header pageTitle={frontmatter.title} />
       <H1>{frontmatter.title}</H1>
       <H2>{frontmatter.date_posted}</H2>
-      <Paragraph>
+      <main>
         <div
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: html }}
         />
         <H3>last updated: {frontmatter.last_updated}</H3>
-      </Paragraph>
+      </main>
     </>
   )
 }
