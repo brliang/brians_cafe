@@ -14,7 +14,7 @@ const Layout = ({ pageData, pageTitle }) => {
         <meta content="Brian Liang Website" name="descripton" />
         <meta content="Brian Liang | Software Engineer" property="og:title" />
         <meta content="brians.cafe" property="og:site_name" />
-        <title>Bliang | {pageTitle}</title>
+        <title>brian liang | {pageTitle}</title>
       </Helmet>
       <Header pageTitle={pageTitle} />
       <Body pageData={pageData} pageTitle={pageTitle} />
