@@ -1,12 +1,8 @@
 import styled from "styled-components"
 
 const Main = styled.main`
-  align-items: center;
-  display: flex;
-  justify-content: center;
   margin: 2vh auto 8vh;
   max-width: 30vw;
-  text-align: center;
 
   @media screen and (min-width: 1800px) {
     max-width: 20vw;
