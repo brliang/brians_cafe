@@ -7,10 +7,8 @@ import Footer from "./footer"
 import pages from "../constants/global"
 import H1 from "../styled_components/h1"
 import Hgroup from "../styled_components/hgroup"
-import Li from "../styled_components/li"
 import StyledMain from "../styled_components/main"
 import Paragraph from "../styled_components/paragraph"
-import Ul from "../styled_components/ul"
 import Brian from "../svg/brian.svg"
 
 const Main = ({ pageData, pageTitle }) => {
@@ -26,8 +24,8 @@ const Main = ({ pageData, pageTitle }) => {
           <StyledMain>
             <Paragraph>
               <strong>present:</strong>
-              <Ul>
-                <Li>
+              <ul>
+                <li>
                   swe @{" "}
                   <a
                     id="rockset"
@@ -37,11 +35,11 @@ const Main = ({ pageData, pageTitle }) => {
                   >
                     rockset
                   </a>
-                </Li>
-              </Ul>
+                </li>
+              </ul>
               <strong>previous: </strong>
-              <Ul>
-                <Li>
+              <ul>
+                <li>
                   intern @ expedia,{" "}
                   <a
                     id="linkedin"
@@ -52,9 +50,9 @@ const Main = ({ pageData, pageTitle }) => {
                     linkedin
                   </a>
                   , facebook
-                </Li>
-                <Li>computer science @ northwestern</Li>
-              </Ul>
+                </li>
+                <li>computer science @ northwestern</li>
+              </ul>
               This site shelters an eclectic assortment of my{" "}
               <Link to="/thoughts/">
                 <strong>thoughts</strong>
