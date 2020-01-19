@@ -37,10 +37,10 @@ const Main = ({ pageData, pageTitle }) => {
                   </a>
                 </li>
               </ul>
-              <strong>previous: </strong>
+              <strong>past: </strong>
               <ul>
                 <li>
-                  intern @ expedia,{" "}
+                  interned: [expedia,{" "}
                   <a
                     id="linkedin"
                     href="https://www.linkedin.com/in/brian-liang/"
@@ -49,9 +49,9 @@ const Main = ({ pageData, pageTitle }) => {
                   >
                     linkedin
                   </a>
-                  , facebook
+                  , facebook]
                 </li>
-                <li>computer science @ northwestern</li>
+                <li>northwestern - computer science</li>
               </ul>
               This site shelters an eclectic assortment of my{" "}
               <Link to="/thoughts/">
