@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet"
 import PropTypes from "prop-types"
 
 import Header from "./header"
-import Main from "./main"
+import Body from "./body"
 
 const Layout = ({ pageData, pageTitle }) => {
   return (
@@ -14,10 +14,10 @@ const Layout = ({ pageData, pageTitle }) => {
         <meta content="Brian Liang Website" name="descripton" />
         <meta content="Brian Liang | Software Engineer" property="og:title" />
         <meta content="brians.cafe" property="og:site_name" />
-        <title>Brian Liang | {pageTitle}</title>
+        <title>Bliang | {pageTitle}</title>
       </Helmet>
       <Header pageTitle={pageTitle} />
-      <Main pageData={pageData} pageTitle={pageTitle} />
+      <Body pageData={pageData} pageTitle={pageTitle} />
     </>
   )
 }

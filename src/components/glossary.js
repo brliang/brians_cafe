@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 import Post from "./post"
 import pages from "../constants/global"
 
-const Container = ({ pageData, pageTitle }) => {
+const Glossary = ({ pageData, pageTitle }) => {
   switch (pageTitle) {
     case pages.THOUGHTS:
     case pages.JETSAM:
@@ -27,9 +27,9 @@ const Container = ({ pageData, pageTitle }) => {
   }
 }
 
-Container.propTypes = {
+Glossary.propTypes = {
   pageData: PropTypes.object.isRequired,
   pageTitle: PropTypes.string.isRequired,
 }
 
-export default Container
+export default Glossary

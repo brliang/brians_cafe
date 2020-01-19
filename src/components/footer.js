@@ -11,7 +11,8 @@ const Footer = () => {
       <StyledFooter>
         <Contact />
         <H3>
-          message me for free&nbsp;<Coffee id="coffee" />
+          message me for free&nbsp;
+          <Coffee id="coffee" />
         </H3>
       </StyledFooter>
     </>

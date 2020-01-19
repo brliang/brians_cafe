@@ -20,7 +20,6 @@ const Post = ({ date_posted, path, title }) => {
 
 Post.propTypes = {
   date_posted: PropTypes.string.isRequired,
-  last_updated: PropTypes.string.isRequired,
   path: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
 }

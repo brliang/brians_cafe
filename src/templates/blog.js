@@ -6,8 +6,6 @@ import Header from "../components/header"
 import H1 from "../styled_components/h1"
 import H2 from "../styled_components/h2"
 import H3 from "../styled_components/h3"
-import Hgroup from "../styled_components/hgroup"
-import Main from "../styled_components/main"
 import Paragraph from "../styled_components/paragraph"
 
 export default function Template({
@@ -26,19 +24,15 @@ export default function Template({
         <title>Brian Liang | {frontmatter.title}</title>
       </Helmet>
       <Header pageTitle={frontmatter.title} />
-      <Hgroup>
-        <H1>{frontmatter.title}</H1>
-        <H2>{frontmatter.date_posted}</H2>
-      </Hgroup>
-      <Main>
-        <Paragraph>
-          <div
-            className="blog-post-content"
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
-          <H3>last updated: {frontmatter.last_updated}</H3>
-        </Paragraph>
-      </Main>
+      <H1>{frontmatter.title}</H1>
+      <H2>{frontmatter.date_posted}</H2>
+      <Paragraph>
+        <div
+          className="blog-post-content"
+          dangerouslySetInnerHTML={{ __html: html }}
+        />
+        <H3>last updated: {frontmatter.last_updated}</H3>
+      </Paragraph>
     </>
   )
 }
