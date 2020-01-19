@@ -1,4 +1,5 @@
 import React from "react"
+import Img from "gatsby-image"
 import PropTypes from "prop-types"
 
 import Post from "./post"
@@ -22,6 +23,16 @@ const Glossary = ({ pageData, pageTitle }) => {
         </ul>
       )
     case pages.PHOTOS:
+      return (
+        <div className={"photos"}>
+          {pageData.allFile.edges.map(edge => (
+            <Img
+              fluid={edge.node.childImageSharp.fluid}
+              style={{ pageBreakInside: "avoid" }}
+            />
+          ))}
+        </div>
+      )
     default:
       return <div />
   }

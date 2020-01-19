@@ -51,7 +51,11 @@ const Body = ({ pageData, pageTitle }) => {
             <Link to="/thoughts/">
               <strong> thoughts</strong>
             </Link>
-            , photos, and all other
+            ,
+            <Link to="/photos/">
+              <strong> photos</strong>
+            </Link>
+            , and all other
             <Link to="/jetsam/">
               <strong> jetsam</strong>
             </Link>

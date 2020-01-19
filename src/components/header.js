@@ -23,7 +23,7 @@ const Header = ({ pageTitle }) => {
             <Link to="/thoughts/">thoughts</Link>
           </H2>
           <H2>
-            <div class="disabled">photos</div>
+            <Link to="/photos/">photos</Link>
           </H2>
           <H2>
             <Link to="/jetsam/">jetsam</Link>
