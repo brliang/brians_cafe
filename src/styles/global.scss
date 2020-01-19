@@ -34,7 +34,7 @@ $lg-svg: calc(60px + 3vw);
 html {
   background-color: $quaternary-color;
   color: $primary-font-color;
-  font: 100% $font-stack;
+  font-family: $font-stack;
 }
 
 body {
@@ -100,7 +100,8 @@ a:active {
 
 // Styling for Markdown
 
-ol {
+ol,
+ul {
   margin: 10px 0;
   padding: 0 15px;
 }
