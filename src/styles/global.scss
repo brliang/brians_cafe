@@ -34,9 +34,7 @@ $lg-svg: calc(60px + 3vw);
 html {
   background-color: $quaternary-color;
   color: $primary-font-color;
-  display: flex;
   font: 100% $font-stack;
-  min-height: 100%;
 }
 
 body {
