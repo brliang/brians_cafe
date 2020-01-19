@@ -20,7 +20,7 @@ export default function Template({
         <meta content="Brian Liang Website" name="descripton" />
         <meta content="Brian Liang | Software Engineer" property="og:title" />
         <meta content="brians.cafe" property="og:site_name" />
-        <title>Brian Liang | {frontmatter.title}</title>
+        <title>brian liang | {frontmatter.title}</title>
       </Helmet>
       <Header pageTitle={frontmatter.title} />
       <H1>{frontmatter.title}</H1>
