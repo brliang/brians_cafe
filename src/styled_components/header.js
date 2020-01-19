@@ -5,7 +5,7 @@ const Header = styled.header`
   display: flex;
   justify-content: space-around;
   margin: 5vh 22vw 5vh;
-  min-height: 4vh;
+  min-height: 2vh;
 
   @media screen and (max-width: 600px) {
     margin: 3vh 18vw 3vh;

@@ -18,14 +18,15 @@ const global = {
   },
   font_sizes: {
     xs: "calc(10pt + .1vw)",
-    s: "calc(10pt + .3vw)",
-    m: "calc(12pt + .5vw)",
+    s: "calc(10pt + .2vw)",
+    m: "calc(12pt + .3vw)",
     l: "calc(12pt + 2vw)",
   },
   font_weights: {
-    light: 100,
-    medium: 300,
-    bold: 500,
+    thin: 100,
+    light: 300,
+    medium: 400,
+    bold: 600,
   },
 }
 

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i&display=swap');
+
 $font-stack: Josefin Sans, sans-serif;
 $primary-font-color: black;
 $secondary-font-color: #9737ab;
@@ -19,9 +21,10 @@ $arrow-color: #3fd886;
 $bread-color: #a7612f;
 $quill-color: #d3d3d3;
 
-$light: 100;
-$medium: 300;
-$bold: 500;
+$thin: 100;
+$light: 300;
+$medium: 400;
+$bold: 600;
 
 $xs-svg: calc(15px + 0.5vw);
 $sm-svg: calc(30px + 1vw);
@@ -46,7 +49,7 @@ body {
 
 ::placeholder {
   font-family: $font-stack;
-  font-weight: $light;
+  font-weight: $thin;
 }
 
 #rockset {

@@ -1,5 +1,5 @@
 const pages = {
-  INDEX: "home",
+  INDEX: "~",
   THOUGHTS: "thoughts",
   PHOTOS: "photos",
   JETSAM: "jetsam",

@@ -6,4 +6,4 @@ title: "learning"
 category: "thoughts"
 ---
 
-Coming soon!
+Currently writing.

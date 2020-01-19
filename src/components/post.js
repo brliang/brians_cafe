@@ -7,10 +7,14 @@ import H3 from "../styled_components/h3"
 
 const Post = ({ date_posted, path, title }) => {
   return (
-    <Link to={path}>
-      <H2>{title}</H2>
-      <H3>{date_posted}</H3>
-    </Link>
+    <>
+      <Link to={path}>
+        <H2>
+          <Link to={path}>{title}</Link>
+        </H2>
+        <H3>{date_posted}</H3>
+      </Link>
+    </>
   )
 }
 
