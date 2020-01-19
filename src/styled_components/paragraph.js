@@ -13,7 +13,6 @@ const Paragraph = styled.p`
   margin: 0 1vw;
   padding: 20px;
   text-align: left;
-  transition: 0.1s;
 `
 
 export default Paragraph
