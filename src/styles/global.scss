@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i&display=swap");
 
-$font-stack: Josefin Sans, sans-serif;
+$font-stack: Helvetica, sans-serif;
 $primary-font-color: black;
 $secondary-font-color: #9737ab;
 $tertiary-font-color: #0077b5;
@@ -110,7 +110,7 @@ strong {
 }
 
 ul li {
-  list-style: square;
+  list-style-type: none;
 }
 
 li {

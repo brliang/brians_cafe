@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-const Main = styled.div`
+const Main = styled.main`
   margin: 2vh auto 8vh;
   max-width: 30vw;
 
