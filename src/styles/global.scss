@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i&display=swap");
 
 $font-stack: Josefin Sans, sans-serif;
 $primary-font-color: black;
@@ -100,9 +100,8 @@ a:active {
 
 // Styling for Markdown
 
-ol,
-ul {
-  margin: 5px 0;
+ol {
+  margin: 10px 0;
   padding: 0 15px;
 }
 
