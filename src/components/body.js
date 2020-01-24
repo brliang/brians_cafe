@@ -34,7 +34,7 @@ const Body = ({ pageData, pageTitle }) => {
             <strong>past: </strong>
             <ul>
               <li>
-                interned: [expedia,{" "}
+                intern: [expedia,{" "}
                 <a
                   id="linkedin"
                   href="https://www.linkedin.com/in/brian-liang/"
