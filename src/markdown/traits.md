@@ -1,12 +1,12 @@
 ---
 path: "/jetsam/traits"
 date_posted: "2020-01-18"
-last_updated: "2020-01-18"
+last_updated: "2020-02-07"
 title: "traits"
 category: "jetsam"
 ---
 
-1. **Self-Awareness**
+1. **Self-Aware**
 
    Introspection affords clarity.
 
