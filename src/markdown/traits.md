@@ -6,31 +6,29 @@ title: "traits"
 category: "jetsam"
 ---
 
-Valuable traits:
+1. **Self-Awareness**
 
-1. **Self-Aware**
-
-   Introspection affords clarity, and a framework for growth.
+   Introspection affords clarity.
 
 2. **Organized**
 
-   I used to be very disorganized. Disorganized people lose a lot.
+   I used to be very disorganized; disorganized people lose a lot (time, focus, etc).
 
 3. **Kind**
 
-   Not much explanation needed.
+   Nice people are nice.
 
 4. **Inquisitive**
 
-   Take things with a grain of salt. Not questioning information, especially in this day and age, is often a recipe for a stymied perspective. A society of people taking things as presented inevitably creates an echo chamber.
+   Take things with a grain of salt. Not questioning information is a recipe for a stymied perspective.
 
 5. **Optimistic**
 
-   Too many cynics on the internet these days.
+   With a touch of cynicism.
 
 6. **Intentional**
 
-    Doing things without reason is scary.
+    Do things with reason.
 
 7. **Resilient**
 
