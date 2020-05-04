@@ -33,19 +33,7 @@ const Body = ({ pageData, pageTitle }) => {
             </ul>
             <strong>past: </strong>
             <ul>
-              <li>
-                intern: [expedia,{" "}
-                <a
-                  id="linkedin"
-                  href="https://www.linkedin.com/in/brian-liang/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  linkedin
-                </a>
-                , facebook]
-              </li>
-              <li>northwestern - computer science</li>
+              <li>new jersey - northwestern - intern</li>
             </ul>
             This site shelters an eclectic assortment of my
             <Link to="/thoughts/">
