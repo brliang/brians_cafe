@@ -36,15 +36,15 @@ const Body = ({ pageData, pageTitle }) => {
               <li>new jersey - northwestern - intern</li>
             </ul>
             This site shelters an eclectic assortment of my
-            <Link to="/thoughts/">
+            <Link to="/">
               <strong> thoughts</strong>
             </Link>
             ,
-            <Link to="/photos/">
+            <Link to="/">
               <strong> photos</strong>
             </Link>
             , and all other
-            <Link to="/jetsam/">
+            <Link to="/">
               <strong> jetsam</strong>
             </Link>
             .
