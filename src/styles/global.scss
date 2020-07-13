@@ -27,9 +27,9 @@ $m: calc(12pt + 0.3vw);
 $l: calc(12pt + 2vw);
 
 $thin: 100;
-$light: 300;
-$medium: 400;
-$bold: 600;
+$light: 200;
+$medium: 300;
+$bold: 400;
 
 $xs-svg: calc(15px + 0.5vw);
 $sm-svg: calc(30px + 1vw);
@@ -52,42 +52,10 @@ main {
   font-size: $s;
   font-weight: $light;
   line-height: 1.25;
-  margin: 2vh auto 8vh;
-  max-width: 25vw;
+  margin: auto;
+  max-width: 300px;
   padding: 20px;
   text-align: left;
-
-  @media screen and (min-width: 2000px) {
-    max-width: 15vw;
-  }
-
-  @media screen and (max-width: 1200px) {
-    max-width: 30vw;
-  }
-
-  @media screen and (max-width: 1000px) {
-    max-width: 35vw;
-  }
-
-  @media screen and (max-width: 900px) {
-    max-width: 45vw;
-  }
-
-  @media screen and (max-width: 800px) {
-    max-width: 55vw;
-  }
-
-  @media screen and (max-width: 700px) {
-    max-width: 65vw;
-  }
-
-  @media screen and (max-width: 600px) {
-    max-width: 75vw;
-  }
-
-  @media screen and (max-width: 500px) {
-    max-width: 85vw;
-  }
 }
 
 .disabled {
@@ -143,8 +111,8 @@ a:active {
 }
 
 #brian {
-  max-height: $lg-svg;
-  max-width: $lg-svg;
+  max-height: $med-svg;
+  max-width: $med-svg;
 }
 
 .photos {

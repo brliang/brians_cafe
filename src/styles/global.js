@@ -24,9 +24,9 @@ const global = {
   },
   font_weights: {
     thin: 100,
-    light: 300,
-    medium: 400,
-    bold: 600,
+    light: 200,
+    medium: 300,
+    bold: 400,
   },
 }
 

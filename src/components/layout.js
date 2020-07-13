@@ -4,6 +4,7 @@ import PropTypes from "prop-types"
 
 import Header from "./header"
 import Body from "./body"
+import pages from "../constants/global"
 
 const Layout = ({ pageData, pageTitle }) => {
   return (
@@ -16,7 +17,7 @@ const Layout = ({ pageData, pageTitle }) => {
         <meta content="brians.cafe" property="og:site_name" />
         <title>brian liang | {pageTitle}</title>
       </Helmet>
-      <Header pageTitle={pageTitle} />
+      {pageTitle !== pages.INDEX && <Header pageTitle={pageTitle} />}
       <Body pageData={pageData} pageTitle={pageTitle} />
     </>
   )

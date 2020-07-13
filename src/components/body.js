@@ -12,48 +12,64 @@ const Body = ({ pageData, pageTitle }) => {
   switch (pageTitle) {
     case pages.INDEX:
       return (
-        <>
-          <H1>
-            <Brian id="brian" /> Brian Liang
-          </H1>
-          <main>
-            <strong>present:</strong>
-            <ul>
-              <li>
-                swe @{" "}
-                <a
-                  id="rockset"
-                  href="https://www.rockset.com"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  rockset
-                </a>
-              </li>
-            </ul>
-            <strong>past: </strong>
-            <ul>
-              <li>new jersey - northwestern - intern</li>
-            </ul>
-            This site shelters an eclectic assortment of my
-            <Link to="/">
-              <strong> thoughts</strong>
-            </Link>
-            ,
-            <Link to="/">
-              <strong> photos</strong>
-            </Link>
-            , and all other
-            <Link to="/">
-              <strong> jetsam</strong>
-            </Link>
-            .
-            <br /> <br />
-            If you have an inquiry, or want to say hi, feel free to send a
-            message! I'll respond within 24 hours.
-          </main>
-          <Footer />
-        </>
+        <body
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            height: "100vh",
+            width: "100vw",
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              flexDirection: "column",
+            }}
+          >
+            <H1>
+              <Brian id="brian" /> Brian
+            </H1>
+            <main>
+              <strong>present:</strong>
+              <ul>
+                <li>
+                  swe @{" "}
+                  <a
+                    id="rockset"
+                    href="https://www.rockset.com"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    rockset
+                  </a>
+                </li>
+              </ul>
+              <strong>past: </strong>
+              <ul>
+                <li>new jersey - northwestern - intern</li>
+              </ul>
+              This site shelters an eclectic assortment of my
+              <Link to="/thoughts">
+                <strong> thoughts</strong>
+              </Link>
+              ,
+              <Link to="/photos">
+                <strong> photos</strong>
+              </Link>
+              , and all other
+              <Link to="/jetsam">
+                <strong> jetsam</strong>
+              </Link>
+              .
+              <br /> <br />
+              If you have an inquiry, or want to say hi, feel free to send a
+              message! I'll respond within 24 hours.
+            </main>
+            <Footer />
+          </div>
+        </body>
       )
     case pages.THOUGHTS:
     case pages.PHOTOS:
@@ -61,7 +77,6 @@ const Body = ({ pageData, pageTitle }) => {
     default:
       return (
         <>
-          <H1>{pageTitle}</H1>
           <Glossary pageData={pageData} pageTitle={pageTitle} />
         </>
       )

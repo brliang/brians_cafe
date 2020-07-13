@@ -1,7 +1,7 @@
 ---
 path: "/jetsam/bookmarked"
-date_posted: "2020-01-07"
-last_updated: "2020-01-07"
+date_posted: "2020"
+last_updated: "2020"
 title: "bookmarked"
 category: "jetsam"
 ---

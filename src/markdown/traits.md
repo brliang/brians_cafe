@@ -1,7 +1,7 @@
 ---
 path: "/jetsam/traits"
-date_posted: "2020-01-18"
-last_updated: "2020-02-07"
+date_posted: "2020"
+last_updated: "2020"
 title: "traits"
 category: "jetsam"
 ---

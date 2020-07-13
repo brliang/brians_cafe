@@ -13,6 +13,7 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-preload-fonts`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
