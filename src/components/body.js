@@ -35,7 +35,7 @@ const Body = ({ pageData, pageTitle }) => {
               <strong>present:</strong>
               <ul>
                 <li>
-                  swe @{" "}
+                  👨🏻‍💻@ {" "}
                   <a
                     id="rockset"
                     href="https://www.rockset.com"
@@ -65,7 +65,7 @@ const Body = ({ pageData, pageTitle }) => {
               .
               <br /> <br />
               If you have an inquiry, or want to say hi, feel free to send a
-              message! I'll respond within 24 hours.
+              message! I'll respond ASAP.
             </main>
             <Footer />
           </div>
