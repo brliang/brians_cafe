@@ -109,8 +109,8 @@ const Home = () => (
         </GatsbyLink>
         . 
         <br /> <br />*/}
-        Feel free to send a message! I'll respond ASAP 🙋🏻‍♂️. In dire need of human
-        contact 🥺.
+        Feel free to send a message! I'll respond ASAP 🙋🏻‍♂️. In dire need of
+        social interaction 🥺.
       </Main>
       {/* <Rockset /> */}
       <Footer />
