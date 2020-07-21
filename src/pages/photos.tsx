@@ -1,16 +1,17 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React from 'react';
+import { graphql } from 'gatsby';
 
-import Layout from "../components/layout"
-import pages from "../constants/global"
-import "../styles/global.scss"
+import { Layout } from '../components/layout';
+import { pages } from '../constants/global';
 
-const Photos = ({ data }) => <Layout pageData={data} pageTitle={pages.PHOTOS} />
+import { JetsamQuery, PhotosQuery } from '../../graphql-types';
 
-export default Photos
+const Photos = (data: { data: JetsamQuery & PhotosQuery }) => (
+  <Layout pageData={data.data} pageTitle={pages.PHOTOS} />
+);
 
 export const query = graphql`
-  query {
+  query Photos {
     allFile(
       filter: {
         extension: { regex: "/(jpg)|(jpeg)|(png)/" }
@@ -30,4 +31,6 @@ export const query = graphql`
       }
     }
   }
-`
+`;
+
+export default Photos;

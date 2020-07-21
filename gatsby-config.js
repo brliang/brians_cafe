@@ -14,6 +14,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-preload-fonts`,
+    `gatsby-plugin-graphql-codegen`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -27,8 +28,8 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#FFF`,
+        theme_color: `#FFF`,
         display: `minimal-ui`,
         icon: `src/svg/quill.svg`,
       },

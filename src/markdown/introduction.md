@@ -1,9 +1,9 @@
 ---
-path: "/thoughts/introduction"
-date_posted: "2020-01-07"
-last_updated: "2020-01-10"
-title: "introduction"
-category: "thoughts"
+path: '/thoughts/introduction'
+date_posted: '2020-01-07'
+last_updated: '2020-01-10'
+title: 'introduction'
+category: 'thoughts'
 ---
 
 For anyone wondering why this website's domain name is **"brians.cafe"**:
