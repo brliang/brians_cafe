@@ -10,9 +10,18 @@ const Coffee = require('../svg/coffee.svg');
 export const Footer = () => (
   <StyledFooter>
     <Contact />
-    <div style={{ display: 'flex', alignItems: 'center' }}>
-      <H3>message me for free&nbsp;</H3>
+    <div
+      style={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}
+    >
+      <H3>msg me and i'll buy u&nbsp;</H3>
       <Coffee style={{ maxHeight: global.svg.xs, maxWidth: global.svg.xs }} />
+    </div>
+    <div>
+      <H3>pinky promise</H3>
     </div>
   </StyledFooter>
 );

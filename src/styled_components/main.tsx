@@ -10,8 +10,8 @@ export const Main = styled.main`
 
   @media (prefers-color-scheme: dark) {
     background-color: ${colors.background_focus_dark};
-    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.5),
-      0 2px 4px 0 rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2),
+      0 2px 4px 0 rgba(255, 255, 255, 0.2);
   }
 
   line-height: 1.25;

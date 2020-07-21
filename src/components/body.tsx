@@ -52,7 +52,7 @@ const Home = () => (
       </div>
       <Main style={{ maxWidth: 360 }}>
         <div style={{ marginBottom: 10 }}>
-          <Strong>currently:</Strong> 👨🏻‍💻 @{' '}
+          <Strong>currently:</Strong> 👨🏻‍💻 building product @{' '}
           <A
             id="rockset"
             href="https://www.rockset.com"
@@ -109,8 +109,8 @@ const Home = () => (
         </GatsbyLink>
         . 
         <br /> <br />*/}
-        Feel free to send a message! The form will drop an email directly into
-        my inbox. I'll respond ASAP 🙋🏻‍♂️.
+        Feel free to send a message! I'll respond ASAP 🙋🏻‍♂️. In dire need of human
+        contact 🥺.
       </Main>
       {/* <Rockset /> */}
       <Footer />
