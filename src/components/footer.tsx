@@ -17,11 +17,11 @@ export const Footer = () => (
         justifyContent: 'center',
       }}
     >
-      <H3>msg me and i'll buy u&nbsp;</H3>
+      <H3 style={{ margin: 0 }}>msg me and i'll buy u&nbsp;</H3>
       <Coffee style={{ maxHeight: global.svg.xs, maxWidth: global.svg.xs }} />
     </div>
     <div>
-      <H3>pinky promise</H3>
+      <H3 style={{ margin: 0 }}>pinky promise</H3>
     </div>
   </StyledFooter>
 );
