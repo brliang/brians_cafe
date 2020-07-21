@@ -64,9 +64,9 @@ const Home = () => (
         </div>
         <Strong>so far: </Strong>
         <Ul>
-          <Li>new jersey ⇁ chicago ⇁ san mateo ⇁ ?</Li>
+          <Li>e.b., nj ⇁ evanston, il ⇁ san mateo, ca ⇁ ?</Li>
           <Li>
-            messenger for businesses at{' '}
+            🤳🏻 messenger for businesses at{' '}
             <A
               id="facebook"
               href="https://www.facebook.com/brianwliang"
@@ -77,7 +77,7 @@ const Home = () => (
             </A>
           </Li>
           <Li>
-            recruiting software at{' '}
+            📄 recruiting software at{' '}
             <A
               id="linkedin"
               href="https://www.linkedin.com/in/brian-liang"
@@ -88,7 +88,7 @@ const Home = () => (
             </A>
           </Li>
           <Li>
-            hotels at{' '}
+            🏨 hotels at{' '}
             <A
               id="expedia"
               href="https://www.airbnb.com/"
@@ -99,7 +99,7 @@ const Home = () => (
             </A>
           </Li>
         </Ul>
-        This site shelters an eclectic assortment of my{' '}
+        {/* This site shelters an eclectic assortment of my{' '}
         <GatsbyLink to="/jetsam">
           <Strong>thoughts</Strong>
         </GatsbyLink>{' '}
@@ -107,10 +107,10 @@ const Home = () => (
         <GatsbyLink to="/photos">
           <Strong>photos</Strong>
         </GatsbyLink>
-        .
-        <br /> <br />
-        If you have an inquiry, or want to say hi, feel free to send a message!
-        I'll respond ASAP.
+        . 
+        <br /> <br />*/}
+        Feel free to send a message! The form will drop an email directly into
+        my inbox. I'll respond ASAP 🙋🏻‍♂️.
       </Main>
       {/* <Rockset /> */}
       <Footer />
