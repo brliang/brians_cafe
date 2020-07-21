@@ -160,4 +160,8 @@ const HomeWrapper = styled.div`
       color: ${global.colors.expedia_secondary_color};
     }
   }
+
+  @media screen and (max-width: 800px) {
+    padding: 10px 10px;
+  }
 `;
