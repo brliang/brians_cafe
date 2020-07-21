@@ -64,7 +64,7 @@ const Home = () => (
         </div>
         <Strong>so far: </Strong>
         <Ul>
-          <Li>new jersey ⇁ chi ⇁ san mateo ⇁ ?</Li>
+          <Li>new jersey ⇁ chicago ⇁ san mateo ⇁ ?</Li>
           <Li>
             messenger for businesses at{' '}
             <A
