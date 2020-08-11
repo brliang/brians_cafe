@@ -18,8 +18,9 @@ export const Textarea = styled.textarea`
   font-family: ${fonts.josefin_sans};
   font-size: ${font_sizes.xs};
   font-weight: ${font_weights.light};
-  height: 4vh;
-  width: calc(100px + 5vw);
+  height: 7vh;
+  width: calc(120px + 10vw);
+  line-height: 20px;
 
   &:focus {
     outline: none;
