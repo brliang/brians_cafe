@@ -65,7 +65,7 @@ const Home = () => (
         <Strong>so far: </Strong>
         <Ul>
           <Li>e.b., nj ⇁ evanston, il ⇁ san mateo, ca ⇁ ?</Li>
-          <Li>
+<!--           <Li>
             🤳🏻 messenger for businesses at{' '}
             <A
               id="facebook"
@@ -97,7 +97,7 @@ const Home = () => (
             >
               expedia
             </A>
-          </Li>
+          </Li> -->
         </Ul>
         {/* This site shelters an eclectic assortment of my{' '}
         <GatsbyLink to="/jetsam">
