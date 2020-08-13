@@ -52,7 +52,7 @@ const Home = () => (
       </div>
       <Main style={{ maxWidth: 360 }}>
         <div style={{ marginBottom: 10 }}>
-          <Strong>currently:</Strong> 👨🏻‍💻 building product @{' '}
+          <Strong>currently:</Strong> 👨🏻‍💻🚧🧨🙈 building @{' '}
           <A
             id="rockset"
             href="https://www.rockset.com"
@@ -64,8 +64,8 @@ const Home = () => (
         </div>
         <Strong>so far: </Strong>
         <Ul>
-          <Li>e.b., nj ⇁ evanston, il ⇁ san mateo, ca ⇁ ?</Li>
-          {/*<Li>
+          <Li>nj ⇁ illinois ⇁ san mateo, ca ⇁ 🤭 ?</Li>
+          {/* <Li>
             🤳🏻 messenger for businesses at{' '}
             <A
               id="facebook"
@@ -97,7 +97,7 @@ const Home = () => (
             >
               expedia
             </A>
-          </Li>/*}
+          </Li> */}
         </Ul>
         {/* This site shelters an eclectic assortment of my{' '}
         <GatsbyLink to="/jetsam">
@@ -108,9 +108,8 @@ const Home = () => (
           <Strong>photos</Strong>
         </GatsbyLink>
         . 
-        <br /> <br />*/}
-        Feel free to send a message! I'll respond ASAP 🙋🏻‍♂️. Meeting new people is
-        always fun 👋.
+        <br /> <br /> */}
+        hi 🙃 hello 🙋🏻‍♂️
       </Main>
       {/* <Rockset /> */}
       <Footer />
