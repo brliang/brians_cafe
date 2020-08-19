@@ -52,7 +52,7 @@ const Home = () => (
       </div>
       <Main style={{ maxWidth: 360 }}>
         <div style={{ marginBottom: 10 }}>
-          <Strong>currently:</Strong> 👨🏻‍💻🚧🧨🙈 building @{' '}
+          <Strong>currently:</Strong> 👷🏻 building @{' '}
           <A
             id="rockset"
             href="https://www.rockset.com"
