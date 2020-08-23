@@ -6,11 +6,12 @@ export const global = {
     secondary_font_dark: '#ffd500',
 
     background: 'white',
-    background_dark: '#032535',
+    background_dark: '#01141c',
     background_focus: '#fffaf2',
     background_focus_dark: '#003550',
 
     cta: '#ffc857',
+    cta_hover: '#ffdd96',
     link: '#db2763',
 
     disabled: 'lightgray',
@@ -31,10 +32,10 @@ export const global = {
     josefin_sans: 'Josefin Sans, sans_serif',
   },
   font_sizes: {
-    xs: 'calc(12pt + .1vw)',
-    s: 'calc(12pt + .2vw)',
-    m: 'calc(12pt + .5vw)',
-    l: 'calc(20pt + 1vw)',
+    xs: '.85em',
+    s: '1.2em',
+    m: '1.5em',
+    l: '2em',
   },
   font_weights: {
     thin: 100,

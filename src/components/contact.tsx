@@ -34,7 +34,7 @@ export const Contact = () => (
         <Input name="bot-field" type="hidden" />
         <Textarea
           name="message"
-          placeholder="you can expand this box 👍"
+          placeholder="message!"
           autoComplete="off"
           required={true}
         />

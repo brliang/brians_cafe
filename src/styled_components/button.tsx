@@ -10,4 +10,8 @@ export const Button = styled.button`
   border: none;
   color: ${colors.primary_font};
   padding: 5px;
+
+  :hover {
+    background-color: ${colors.cta_hover};
+  }
 `;

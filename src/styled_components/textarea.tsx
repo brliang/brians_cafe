@@ -19,7 +19,8 @@ export const Textarea = styled.textarea`
   font-size: ${font_sizes.xs};
   font-weight: ${font_weights.light};
   height: 7vh;
-  width: calc(120px + 10vw);
+  min-height: 50px;
+  width: calc(150px + 5vw);
   line-height: 20px;
 
   &:focus {

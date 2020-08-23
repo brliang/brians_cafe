@@ -33,4 +33,16 @@ export const Input = styled.input`
       color: ${colors.primary_font_dark};
     }
   }
+
+  :-internal-autofill-selected {
+    background-color: ${colors.background} !important;
+    color: ${colors.primary_font} !important;
+
+    @media (prefers-color-scheme: dark) {
+      border-color: ${colors.primary_font_dark} !important;
+
+      background-color: ${colors.background_dark} !important;
+      color: ${colors.primary_font_dark} !important;
+    }
+  }
 `;

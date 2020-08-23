@@ -43,16 +43,16 @@ const Home = () => (
       style={{
         display: 'flex',
         alignItems: 'center',
-        flexDirection: 'column',
+        // flexDirection: 'column',
       }}
     >
-      <div style={{ display: 'flex', alignItems: 'center', marginBottom: 10 }}>
-        <Brian style={{ maxHeight: global.svg.m, maxWidth: global.svg.m }} />
-        <H1>Brian</H1>
+      <div style={{ display: 'flex', alignItems: 'center', margin: 10 }}>
+        {/* <Brian style={{ maxHeight: global.svg.m, maxWidth: global.svg.m }} /> */}
+        <H1>Brian Liang</H1>
       </div>
       <Main style={{ maxWidth: 360 }}>
-        <div style={{ marginBottom: 10 }}>
-          <Strong>currently:</Strong> 👷🏻 building @{' '}
+        <div>
+          <Strong>currently:</Strong> building @{' '}
           <A
             id="rockset"
             href="https://www.rockset.com"
@@ -62,9 +62,11 @@ const Home = () => (
             rockset
           </A>
         </div>
-        <Strong>so far: </Strong>
+        {/* <Strong>so far: </Strong> */}
         <Ul>
-          <Li>nj ⇁ illinois ⇁ san mateo, ca ⇁ 🤭 ?</Li>
+          <Li>this page is... a WIP</Li>
+          <Li>my attention span these days 🤤</Li>
+          {/* <Li>nj ⇁ illinois ⇁ san mateo, ca ⇁ 🤭 ?</Li> */}
           {/* <Li>
             🤳🏻 messenger for businesses at{' '}
             <A
@@ -109,10 +111,10 @@ const Home = () => (
         </GatsbyLink>
         . 
         <br /> <br /> */}
-        hi 🙃 hello 🙋🏻‍♂️
+        {/* hello 🙋🏻‍♂️ */}
       </Main>
       {/* <Rockset /> */}
-      <Footer />
+      {/* <Footer /> */}
     </Text>
   </HomeWrapper>
 );
