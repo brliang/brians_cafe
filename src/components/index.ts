@@ -6,6 +6,9 @@ import { Header } from './header';
 import { Layout } from './layout';
 import { Post } from './post';
 import { Rockset } from './rockset';
+import { RocksetGet } from './rocksetGet';
+import { RocksetQuery } from './rocksetQuery';
+import { RocksetPost } from './rocksetPost';
 
 export {
   Body,
@@ -17,4 +20,7 @@ export {
   Layout,
   Post,
   Rockset,
+  RocksetGet,
+  RocksetQuery,
+  RocksetPost,
 };

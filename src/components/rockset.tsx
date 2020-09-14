@@ -1,6 +1,6 @@
 import * as React from 'react';
 import rocksetConfigure from 'rockset';
-import { Button } from '../styled_components/index';
+import { Button, Textarea } from '../styled_components/index';
 
 export const Rockset = () => {
   const rockset = rocksetConfigure(
@@ -8,133 +8,59 @@ export const Rockset = () => {
     'https://api.rs2.usw2.rockset.com'
   );
 
-  // const rockset = rocksetConfigure(
-  //   'pIXuTPGcGQpYSNp2DIv3Z8kGPlaDz48ij2ogHRi4Nk5UzQQOK6sGZjS5lKwoJLqF',
-  //   'https:/master-api.dev.rockset.com'
-  // );
-
-  // const rockset = rocksetConfigure(
-  //   '5Xu2O6PkImZWKzgaNCFRsUxjWj3vgn64SS9OKWMbV0ndPHzbvcDWihadraqkOMoO',
-  //   'https:/brian-api.dev.rockset.com'
-  // );
-
-  // const [starterData, setStarterData] = React.useState<QueryResponse>();
-  // const [workspaces, setWorkspaces] = React.useState<
-  //   ListQueryLambdasResponse
-  // >();
-
-  // const fetchData = async () =>
-  //   await rockset.queryLambdas.executeQueryLambdaByTag(
-  //     'commons',
-  //     'ListingsAndReviews',
-  //     'production'
-  //   );
-
   return (
     <div>
       <Button
         onClick={() => {
-          rockset.documents.addDocuments('commons', 'Coffee', {
+          rockset.documents.addDocuments('drinks', 'Coffee', {
             data: [{ roast: 'light' }],
           });
         }}
       >
         Write API
       </Button>
-
-      <Button
+      {/* <Button
         onClick={() => {
-          rockset.collections.getCollection('commons', 'Coffee');
+          fetch('/.netlify/functions/coffee', {
+            method: 'GET',
+            headers: {
+              'Content-type': 'application/json; charset=UTF-8',
+            },
+          }).then(response =>
+            response.text().then(data => setResponseData(data))
+          );
         }}
       >
-        Get Collection
+        Get Coffee
       </Button>
       <Button
         onClick={() => {
-          rockset.queries.query({
-            sql: { query: 'SELECT * from commons.trailers' },
+          fetch('/.netlify/functions/coffee', {
+            method: 'POST',
+            body: JSON.stringify('new FormData'),
+          }).then(response => response.json());
+        }}
+      >
+        Coffee
+      </Button>
+
+      <Button
+        onClick={() => {
+          fetch('/.netlify/functions/tea', {
+            method: 'POST',
+            headers: {
+              'Content-type': 'application/json; charset=UTF-8',
+            },
+            body: JSON.stringify([
+              {
+                type: 'green',
+              },
+            ]),
           });
         }}
       >
-        SELECT 5
-      </Button>
-      <Button
-        onClick={() => {
-          for (var i = 0; i < 105; i++) {
-            rockset.users.createUser({
-              email: `brian+${i}@rockset.com`,
-              roles: ['admin'],
-            });
-          }
-        }}
-      >
-        Create Users
-      </Button>
-      <Button
-        onClick={() => {
-          for (var i = 0; i < 105; i++) {
-            rockset.users.deleteUser(`brian+${i}@rockset.com`);
-          }
-        }}
-      >
-        Delete Users
-      </Button>
-      <Button
-        onClick={() => {
-          for (var i = 0; i < 31; i++) {
-            rockset.collections.createCollection('commons', {
-              name: `brian${i}`,
-            });
-          }
-        }}
-      >
-        Create Collections
-      </Button>
-      <Button
-        onClick={() => {
-          for (var i = 0; i < 31; i++) {
-            rockset.collections.deleteCollection('commons', `brian${i}`);
-          }
-        }}
-      >
-        Delete Collections
-      </Button>
-      <Button
-        onClick={() => {
-          for (var i = 0; i < 51; i++) {
-            rockset.queryLambdas.createQueryLambda('commons', {
-              name: `brian${i}`,
-              sql: { query: `select ${i}` },
-            });
-          }
-        }}
-      >
-        Create Query Lambdas
-      </Button>
-      <Button
-        onClick={() => {
-          for (var i = 0; i < 105; i++) {
-            rockset.queryLambdas.deleteQueryLambda('commons', `brian${i}`);
-          }
-        }}
-      >
-        Delete Query Lambdas
-      </Button>
-      <Button
-        onClick={() => {
-          rockset.workspaces.listWorkspaces();
-        }}
-      >
-        List Workspaces
-      </Button>
-
-      <Button
-        onClick={() => {
-          rockset.collections.listCollections();
-        }}
-      >
-        List Collections
-      </Button>
+        Tea
+      </Button> */}
     </div>
   );
 };

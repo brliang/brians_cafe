@@ -11,7 +11,9 @@ export const Button = styled.button`
   color: ${colors.primary_font};
   padding: 5px;
 
-  :hover {
+  :hover,
+  :active,
+  :focus {
     background-color: ${colors.cta_hover};
   }
 `;

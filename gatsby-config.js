@@ -1,4 +1,18 @@
+const { createProxyMiddleware } = require('http-proxy-middleware'); //v1.x.x
+
 module.exports = {
+  // developMiddleware: app => {
+  //   app.use(
+  //     '/.netlify/functions/',
+  //     createProxyMiddleware({
+  //       target: 'http://localhost:8888',
+  //       secure: false, // Do not reject self-signed certificates.
+  //       pathRewrite: {
+  //         '/.netlify/functions/': '',
+  //       },
+  //     })
+  //   );
+  // },
   siteMetadata: {
     title: `Brian's Cafe`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
@@ -16,9 +30,16 @@ module.exports = {
     `gatsby-plugin-preload-fonts`,
     `gatsby-plugin-graphql-codegen`,
     {
+      resolve: `gatsby-plugin-netlify-functions`,
+      options: {
+        functionsSrc: `${__dirname}/src/functions`,
+        functionsOutput: `${__dirname}/functions`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-121843315-1",
+        trackingId: 'UA-121843315-1',
         head: false,
       },
     },
@@ -35,7 +56,7 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-react-svg",
+      resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {
           include: /svg/,
@@ -57,4 +78,4 @@ module.exports = {
       },
     },
   ],
-}
+};
