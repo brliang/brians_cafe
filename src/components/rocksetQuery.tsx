@@ -60,7 +60,7 @@ export const RocksetQuery = () => {
             <div style={{ marginBottom: 5 }}>
               {Object.entries(row).map(field => (
                 <span style={{ marginRight: 20 }}>
-                  {field[0]}
+                  {field[0]}:
                   <span style={{ fontWeight: 100, marginLeft: 5 }}>
                     {field[1] as any}
                   </span>
