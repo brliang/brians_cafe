@@ -63,7 +63,7 @@ export const RocksetQuery = () => {
         {err
           ? err
           : (responseData as any)?.errorMessage
-          ? (responseData as any).errorMessage
+          ? "You should visit Rockset's actual console to learn SQL :)"
           : responseData?.map(row => (
               <div style={{ marginBottom: 5 }}>
                 {Object.entries(row).map(field => (
