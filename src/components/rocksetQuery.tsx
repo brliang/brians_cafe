@@ -62,6 +62,8 @@ export const RocksetQuery = () => {
       >
         {err
           ? err
+          : (responseData as any)?.errorMessage
+          ? (responseData as any).errorMessage
           : responseData?.map(row => (
               <div style={{ marginBottom: 5 }}>
                 {Object.entries(row).map(field => (
