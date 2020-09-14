@@ -10,7 +10,14 @@ export const RocksetQuery = () => {
 
   return (
     <>
-      <div style={{ display: 'flex', flexDirection: 'column', width: '30%', minWidth: 320 }}>
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          width: '30%',
+          minWidth: 320,
+        }}
+      >
         <Textarea
           value={requestData}
           placeholder="SELECT * from drinks.Coffee c inner join drinks.Tea t on c.email = t.email"
@@ -53,22 +60,20 @@ export const RocksetQuery = () => {
           marginTop: 10,
         }}
       >
-        {responseData?.map(row =>
-          err ? (
-            err
-          ) : (
-            <div style={{ marginBottom: 5 }}>
-              {Object.entries(row).map(field => (
-                <span style={{ marginRight: 20 }}>
-                  {field[0]}:
-                  <span style={{ fontWeight: 100, marginLeft: 5 }}>
-                    {field[1] as any}
+        {err
+          ? err
+          : responseData?.map(row => (
+              <div style={{ marginBottom: 5 }}>
+                {Object.entries(row).map(field => (
+                  <span style={{ marginRight: 20 }}>
+                    {field[0]}:
+                    <span style={{ fontWeight: 100, marginLeft: 5 }}>
+                      {field[1] as any}
+                    </span>
                   </span>
-                </span>
-              ))}
-            </div>
-          )
-        )}
+                ))}
+              </div>
+            ))}
       </div>
     </>
   );
