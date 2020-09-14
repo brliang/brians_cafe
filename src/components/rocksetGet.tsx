@@ -16,7 +16,7 @@ export const RocksetGet = () => {
         <div
           style={{
             display: 'flex',
-            width: 350,
+            width: 320,
             justifyContent: 'space-between',
           }}
         >
@@ -69,7 +69,7 @@ export const RocksetGet = () => {
       </div>
       <div
         style={{
-          minWidth: 600,
+          minWidth: 350,
           maxWidth: '80%',
           whiteSpace: 'nowrap',
           overflow: 'auto',

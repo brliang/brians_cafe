@@ -10,7 +10,7 @@ export const RocksetQuery = () => {
 
   return (
     <>
-      <div style={{ display: 'flex', flexDirection: 'column', minWidth: 420 }}>
+      <div style={{ display: 'flex', flexDirection: 'column', width: '30%', minWidth: 320 }}>
         <Textarea
           value={requestData}
           placeholder="SELECT * from drinks.Coffee c inner join drinks.Tea t on c.email = t.email"
@@ -46,7 +46,7 @@ export const RocksetQuery = () => {
       </div>
       <div
         style={{
-          minWidth: 600,
+          minWidth: 350,
           maxWidth: '80%',
           whiteSpace: 'nowrap',
           overflow: 'auto',

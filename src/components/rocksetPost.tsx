@@ -32,7 +32,7 @@ export const RocksetPost = () => {
             style={{
               display: 'flex',
               flexDirection: 'column',
-              width: 300,
+              width: 200,
             }}
           >
             <Button

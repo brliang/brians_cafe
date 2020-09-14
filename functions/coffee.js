@@ -9,8 +9,12 @@ var _rockset = _interopRequireDefault(require("rockset"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+const {
+  ROCKSET
+} = process.env;
+
 const handler = async event => {
-  const rockset = (0, _rockset.default)('GHLfQ2fiLz5NGgh6Wb6aIKT0vlb0PvIdBQkc5LaVeKZarR4J8Ulx5B2wxwXW2KOj', 'https://api.rs2.usw2.rockset.com');
+  const rockset = (0, _rockset.default)(ROCKSET, 'https://api.rs2.usw2.rockset.com');
 
   if (event.httpMethod === 'GET') {
     return await rockset.queryLambdas.executeQueryLambdaByTag('drinks', 'Coffee', 'latest').then(data => {

@@ -133,7 +133,7 @@ const Home = () => {
         style={{
           display: 'flex',
           justifyContent: 'space-between',
-          margin: 10,
+          margin: 20,
           width: 140,
         }}
       >
@@ -179,8 +179,9 @@ const HomeWrapper = styled.div`
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
-  min-width: 100vw;
+  height: 100vh;
+  width: 100vw;
+  min-width: 320px;
   padding: 50px 0px;
   box-sizing: border-box;
 
