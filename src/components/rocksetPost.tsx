@@ -15,6 +15,7 @@ export const RocksetPost = () => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
+          flexWrap: 'wrap',
         }}
       >
         <div
