@@ -7,6 +7,7 @@ const { colors } = global;
 export const Main = styled.main`
   background-color: ${colors.background_focus};
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
 
   @media (prefers-color-scheme: dark) {
     background-color: ${colors.background_focus_dark};

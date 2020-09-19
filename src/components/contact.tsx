@@ -9,6 +9,7 @@ export const Contact = () => (
     method="POST"
     name="contact"
     netLify-honeypot="bot-field"
+    style={{ width: 200 }}
   >
     <Input name="form-name" type="hidden" value="contact" />
     <Ul>

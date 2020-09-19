@@ -3,7 +3,7 @@ import { Button } from '../styled_components/index';
 import { AnyCnameRecord } from 'dns';
 
 export const RocksetGet = () => {
-  const [responseData, setResponseData] = React.useState([]);
+  const [responseData, setResponseData] = React.useState<string>();
 
   return (
     <>
@@ -26,9 +26,7 @@ export const RocksetGet = () => {
                 method: 'GET',
               })
                 .then(response =>
-                  response
-                    .text()
-                    .then(data => setResponseData(JSON.parse(data)))
+                  response.text().then(data => setResponseData(data))
                 )
                 .catch();
             }}
@@ -41,9 +39,7 @@ export const RocksetGet = () => {
                 method: 'GET',
               })
                 .then(response =>
-                  response
-                    .text()
-                    .then(data => setResponseData(JSON.parse(data)))
+                  response.text().then(data => setResponseData(data))
                 )
                 .catch();
             }}
@@ -56,9 +52,7 @@ export const RocksetGet = () => {
                 method: 'GET',
               })
                 .then(response =>
-                  response
-                    .text()
-                    .then(data => setResponseData(JSON.parse(data)))
+                  response.text().then(data => setResponseData(data))
                 )
                 .catch();
             }}
@@ -71,23 +65,15 @@ export const RocksetGet = () => {
         style={{
           minWidth: 350,
           maxWidth: '80%',
+          maxHeight: '40%',
           whiteSpace: 'nowrap',
           overflow: 'auto',
           marginTop: 10,
         }}
       >
-        {responseData.map(row => (
-          <div style={{ marginBottom: 5 }}>
-            {Object.entries(row).map(field => (
-              <span style={{ marginRight: 20 }}>
-                {field[0]}:
-                <span style={{ fontWeight: 100, marginLeft: 5 }}>
-                  {field[1] as any}
-                </span>
-              </span>
-            ))}
-          </div>
-        ))}
+        <pre>
+          {responseData && JSON.stringify(JSON.parse(responseData), null, 4)}
+        </pre>
       </div>
     </>
   );

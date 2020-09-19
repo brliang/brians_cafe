@@ -24,7 +24,7 @@ export const Footer = () => (
 );
 
 const StyledFooter = styled.footer`
-  margin: 20px auto 0px;
+  margin: 10px auto 0px;
   text-align: center;
 
   @media screen and (max-width: 800px) {

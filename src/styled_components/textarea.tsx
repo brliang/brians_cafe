@@ -8,6 +8,8 @@ export const Textarea = styled.textarea`
   background-color: ${colors.background};
   border: 1px dotted ${colors.primary_font};
   color: ${colors.primary_font};
+  width: 100%;
+  box-sizing: border-box;
 
   @media (prefers-color-scheme: dark) {
     background-color: ${colors.background_dark};

@@ -12,6 +12,8 @@ export const global = {
 
     cta: '#ffc857',
     cta_hover: '#ffdd96',
+    nav_cta: '#03dcf4',
+    nav_cta_hover: '#03dcf447',
     link: '#db2763',
 
     disabled: 'lightgray',

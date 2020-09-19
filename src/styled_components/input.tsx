@@ -7,6 +7,8 @@ const { colors, fonts, font_sizes, font_weights } = global;
 export const Input = styled.input`
   border: 1px solid ${colors.primary_font};
   border-width: 0px 0px 1px;
+  width: 100%;
+  box-sizing: border-box;
 
   background-color: ${colors.background};
   color: ${colors.primary_font};
@@ -21,7 +23,6 @@ export const Input = styled.input`
   font-family: ${fonts.josefin_sans};
   font-size: ${font_sizes.xs};
   font-weight: ${font_weights.light};
-  width: calc(100px + 5vw);
 
   &:focus {
     outline: none;

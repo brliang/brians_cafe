@@ -10,139 +10,119 @@ export const RocksetPost = () => {
 
   return (
     <>
-      <Input
-        name="email"
-        placeholder="email"
-        autoComplete="off"
-        required={true}
-        value={email}
-        onChange={event => {
-          setEmail(event.target.value);
-          setRequestData({ ...requestData, email: event.target.value });
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
         }}
-        style={{ marginBottom: 10 }}
-      />
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
+      >
         <div
           style={{
             display: 'flex',
+            justifyContent: 'space-between',
           }}
         >
-          <div
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              width: 200,
+          <Input
+            name="key"
+            placeholder="key (roast? type?)"
+            autoComplete="off"
+            required={true}
+            value={key}
+            onChange={event => {
+              setKey(event.target.value);
             }}
+            style={{ width: 120, marginRight: 10 }}
+          />
+          <Input
+            name="value"
+            placeholder="value (dark? green?)"
+            autoComplete="off"
+            required={true}
+            value={value}
+            onChange={event => {
+              setValue(event.target.value);
+            }}
+            style={{ width: 120, marginRight: 10 }}
+          />
+          <Button
+            onClick={() => {
+              setRequestData({ ...requestData, [key]: value }),
+                setKey(''),
+                setValue('');
+            }}
+            style={{
+              width: 'fit-content',
+              lineHeight: '10px',
+              borderRadius: 10,
+            }}
+            disabled={key === '' || value === ''}
           >
-            <Button
-              onClick={() => {
-                key !== '' &&
-                  value !== '' &&
-                  (setRequestData({ ...requestData, [key]: value }),
-                  setKey(''),
-                  setValue(''));
-              }}
-              style={{ marginBottom: 10 }}
-            >
-              Append
-            </Button>
-            <div
-              style={{
-                display: 'flex',
-                justifyContent: 'space-between',
-              }}
-            >
-              <Input
-                name="key"
-                placeholder="key"
-                autoComplete="off"
-                required={true}
-                value={key}
-                onChange={event => {
-                  setKey(event.target.value);
-                }}
-                style={{ width: '45%' }}
-              />
-              <Input
-                name="value"
-                placeholder="value"
-                autoComplete="off"
-                required={true}
-                value={value}
-                onChange={event => {
-                  setValue(event.target.value);
-                }}
-                style={{ width: '45%' }}
-              />
-            </div>
-          </div>
-          <div
-            style={{ display: 'flex', flexDirection: 'column', marginLeft: 10 }}
-          >
-            <Button
-              onClick={() => {
-                email !== ''
-                  ? fetch('/.netlify/functions/coffee', {
-                      method: 'POST',
-                      headers: {
-                        Accept: 'application/json, text/plain, */*',
-                        'Content-Type': 'application/json',
-                      },
-                      body: JSON.stringify(requestData),
-                    })
-                      .then(response => {
-                        response.text().then(data => setResponseData(data));
-                      })
-                      .finally(() => {
-                        Object.keys(requestData).forEach(
-                          key => key !== 'email' && delete requestData[key]
-                        );
-                      })
-                      .catch()
-                  : alert('Email please :)');
-              }}
-              style={{ marginBottom: 10 }}
-            >
-              Submit Coffee Preferences
-            </Button>
-            <Button
-              onClick={() => {
-                email !== ''
-                  ? fetch('/.netlify/functions/tea', {
-                      method: 'POST',
-                      headers: {
-                        Accept: 'application/json, text/plain, */*',
-                        'Content-Type': 'application/json',
-                      },
-                      body: JSON.stringify(requestData),
-                    })
-                      .then(response => {
-                        response.text().then(data => setResponseData(data));
-                      })
-                      .finally(() => {
-                        Object.keys(requestData).forEach(
-                          key => key !== 'email' && delete requestData[key]
-                        );
-                      })
-                      .catch()
-                  : alert('Email please :)');
-              }}
-            >
-              Submit Tea Preferences
-            </Button>
-          </div>
+            +
+          </Button>
+        </div>
+        <div
+          style={{ maxWidth: 400, marginLeft: 20, justifyContent: 'center' }}
+        >
+          <pre style={{ overflow: 'auto' }}>
+            {JSON.stringify(requestData, null, 4)}
+          </pre>
         </div>
       </div>
-      <div style={{ maxWidth: 600, margin: 10, justifyContent: 'center' }}>
-        {Object.entries(requestData).map(entry => (
-          <div>
-            {entry[0]}
-            <span style={{ fontWeight: 100, marginLeft: 10 }}>{entry[1]}</span>
-          </div>
-        ))}
+      <div style={{ display: 'flex', marginBottom: 10 }}>
+        <Button
+          onClick={() => {
+            fetch('/.netlify/functions/coffee', {
+              method: 'POST',
+              headers: {
+                Accept: 'application/json, text/plain, */*',
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify(requestData),
+            })
+              .then(response => {
+                response.text().then(data => setResponseData(data));
+              })
+              .finally(() => {
+                Object.keys(requestData).forEach(
+                  key => delete requestData[key]
+                );
+              })
+              .catch();
+          }}
+          disabled={Object.keys(requestData).length === 0}
+          style={{ marginRight: 10 }}
+        >
+          Coffee
+        </Button>
+        <Button
+          onClick={() => {
+            fetch('/.netlify/functions/tea', {
+              method: 'POST',
+              headers: {
+                Accept: 'application/json, text/plain, */*',
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify(requestData),
+            })
+              .then(response => {
+                response.text().then(data => setResponseData(data));
+              })
+              .finally(() => {
+                Object.keys(requestData).forEach(
+                  key => delete requestData[key]
+                );
+              })
+              .catch();
+          }}
+          disabled={Object.keys(requestData).length === 0}
+        >
+          Tea
+        </Button>
       </div>
-      {responseData}
+      <pre>
+        {responseData && JSON.stringify(JSON.parse(responseData), null, 4)}
+      </pre>
     </>
   );
 };

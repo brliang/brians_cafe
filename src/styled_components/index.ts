@@ -10,6 +10,7 @@ import { Text } from './text';
 import { Li } from './li';
 import { Strong } from './strong';
 import { Ul } from './ul';
+import { Tabs } from './tabs';
 
 export {
   Button,
@@ -25,4 +26,5 @@ export {
   GatsbyLink,
   Strong,
   Ul,
+  Tabs,
 };

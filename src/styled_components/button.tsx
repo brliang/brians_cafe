@@ -10,10 +10,12 @@ export const Button = styled.button`
   border: none;
   color: ${colors.primary_font};
   padding: 5px;
+  cursor: ${props => !props.disabled && 'pointer'};
+  opacity: ${props => props.disabled && 0.5};
 
   :hover,
   :active,
   :focus {
-    background-color: ${colors.cta_hover};
+    background-color: ${props => !props.disabled && colors.cta_hover};
   }
 `;
