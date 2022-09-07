@@ -143,28 +143,6 @@ const Home = () => {
           {/* hello 🙋🏻‍♂️ */}
         </Main>
       </Text>
-
-      {contact ? (
-        <Footer />
-      ) : (
-        <>
-          <Tabs
-            selectedTab={activeTab}
-            setSelectedTab={setActiveTab}
-            tabs={['post', 'get', 'query']}
-            style={{
-              display: 'flex',
-              justifyContent: 'space-between',
-              margin: 20,
-              width: 140,
-            }}
-          />
-          {activeTab === 'post' && <RocksetPost />}
-          {activeTab === 'get' && <RocksetGet />}
-          {activeTab === 'query' && <RocksetQuery />}
-          {/* {activeTab === 'internal' && <Rockset />} */}
-        </>
-      )}
     </HomeWrapper>
   );
 };
