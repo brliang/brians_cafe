@@ -85,7 +85,7 @@ const Home = () => {
           </div>
           {/* <Strong>so far: </Strong> */}
           <Ul>
-            <Li>feel free to send me an <a href = "mailto: bliang529@gmail.com">email</a></Li>
+            <Li>feel free to send me an <A href = "mailto: bliang529@gmail.com">email</A></Li>
             <Li>or grab some of my time
             <A
               id="meeting"
