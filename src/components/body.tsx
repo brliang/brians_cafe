@@ -51,7 +51,6 @@ const Home = () => {
   const [activeTab, setActiveTab] = React.useState<
     'internal' | 'get' | 'post' | 'query'
   >('post');
-  const [contact, setContact] = React.useState(false);
 
   return (
     <HomeWrapper>
@@ -65,11 +64,9 @@ const Home = () => {
         <div style={{ display: 'flex', alignItems: 'center', margin: 10 }}>
           {/* <Brian style={{ maxHeight: global.svg.m, maxWidth: global.svg.m }} /> */}
           <H1>Hi I'm Brian</H1>
-          {!contact && (
-            <div style={{ cursor: 'pointer', fontSize: 40, margin: 10 }}>
-              👋
-            </div>
-          )}
+          <div style={{ cursor: 'pointer', fontSize: 40, margin: 10 }}>
+            👋
+          </div>
         </div>
         <Main style={{ maxWidth: 360 }}>
           <div>
@@ -158,7 +155,7 @@ const HomeWrapper = styled.div`
   padding: 50px 0px;
   box-sizing: border-box;
 
-  #rockset {
+  #clay {
     color: ${global.colors.rockset_primary_color};
   }
 
@@ -175,7 +172,7 @@ const HomeWrapper = styled.div`
   }
 
   @media (prefers-color-scheme: dark) {
-    #rockset {
+    #clay {
       color: ${global.colors.rockset_secondary_color};
     }
 
