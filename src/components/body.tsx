@@ -66,38 +66,35 @@ const Home = () => {
           {/* <Brian style={{ maxHeight: global.svg.m, maxWidth: global.svg.m }} /> */}
           <H1>Hi I'm Brian</H1>
           {!contact && (
-            <div
-              onClick={() => setContact(true)}
-              style={{ cursor: 'pointer', fontSize: 40, margin: 10 }}
-            >
+            <div style={{ cursor: 'pointer', fontSize: 40, margin: 10 }}>
               👋
-            </div>
-          )}
-          {contact && (
-            <div
-              onClick={() => setContact(false)}
-              style={{ cursor: 'pointer', fontSize: 40, margin: 10 }}
-            >
-              👨🏻‍💻
             </div>
           )}
         </div>
         <Main style={{ maxWidth: 360 }}>
           <div>
-            <Strong>currently:</Strong> building @{' '}
+            <Strong>currently:</Strong> making bowls @{' '}
             <A
-              id="rockset"
-              href="https://www.rockset.com"
+              id="clay"
+              href="https://www.clay.com"
               rel="noopener noreferrer"
               target="_blank"
             >
-              rockset
+              clay
             </A>
           </div>
           {/* <Strong>so far: </Strong> */}
           <Ul>
-            <Li>this page is... a WIP</Li>
-            <Li>my attention span these days 🤤</Li>
+            <Li>feel free to send me an <a href = "mailto: bliang529@gmail.com">email</a></Li>
+            <Li>or grab some of my time
+            <A
+              id="meeting"
+              href="https://calendly.com/brian_liang/30min"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              time
+            </A>
             {/* <Li>nj ⇁ illinois ⇁ san mateo, ca ⇁ 🤭 ?</Li> */}
             {/* <Li>
             🤳🏻 messenger for businesses at{' '}
