@@ -83,61 +83,17 @@ const Home = () => {
           {/* <Strong>so far: </Strong> */}
           <Ul>
             <Li>feel free to send me an <A href="mailto:bliang529@gmail.com">email</A></Li>
-            <Li>or grab some of my time
-            <A
-              id="meeting"
-              href="https://calendly.com/brian_liang/30min"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              time
-            </A>
-            {/* <Li>nj ⇁ illinois ⇁ san mateo, ca ⇁ 🤭 ?</Li> */}
-            {/* <Li>
-            🤳🏻 messenger for businesses at{' '}
-            <A
-              id="facebook"
-              href="https://www.facebook.com/brianwliang"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              facebook
-            </A>
-          </Li>
-          <Li>
-            📄 recruiting software at{' '}
-            <A
-              id="linkedin"
-              href="https://www.linkedin.com/in/brian-liang"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              linkedIn
-            </A>
-          </Li>
-          <Li>
-            🏨 hotels at{' '}
-            <A
-              id="expedia"
-              href="https://www.airbnb.com/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              expedia
-            </A>
-          </Li> */}
+            <Li>or grab some of my{' '}
+              <A
+                id="meeting"
+                href="https://calendly.com/brian_liang/30min"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                time
+              </A>
+            </Li>
           </Ul>
-          {/* This site shelters an eclectic assortment of my{' '}
-        <GatsbyLink to="/jetsam">
-          <Strong>thoughts</Strong>
-        </GatsbyLink>{' '}
-        and{' '}
-        <GatsbyLink to="/photos">
-          <Strong>photos</Strong>
-        </GatsbyLink>
-        . 
-        <br /> <br /> */}
-          {/* hello 🙋🏻‍♂️ */}
         </Main>
       </Text>
     </HomeWrapper>
