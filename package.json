@@ -30,7 +30,7 @@
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^2.1.43",
     "gatsby-transformer-csv": "^2.1.21",
-    "gatsby-transformer-remark": "^2.6.45",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.3.7",
     "http-proxy-middleware": "^1.0.5",
     "netlify-cli": "^2.62.0",
