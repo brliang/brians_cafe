@@ -67,7 +67,7 @@ const Home = () => {
         </div>
         <Main style={{ maxWidth: 360 }}>
           <div>
-            <Strong>currently:</Strong> making bowls @{' '}
+            <Strong>currently:</Strong> building @{' '}
             <A
               id="clay"
               href="https://www.clay.com"
