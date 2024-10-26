@@ -63,7 +63,7 @@ const Home = () => {
       >
         <div style={{ display: 'flex', alignItems: 'center', margin: 10 }}>
           <H1 style={{ marginRight: -5 }}>Hi I'm Brian</H1>
-          <Brian style={{ maxHeight: global.svg.m, maxWidth: global.svg.m }} />
+{/*           <Brian style={{ maxHeight: global.svg.m, maxWidth: global.svg.m }} /> */}
         </div>
         <Main style={{ maxWidth: 360 }}>
           <div>
